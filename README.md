@@ -1,3 +1,9 @@
+# Sample E-Commerce Website
+
+## Project Structure
+
+```
+
 sample/
 │
 ├── index.html              # Home page (Archie & Nidhi)
@@ -15,3 +21,17 @@ sample/
 ├── images/
 │
 └── README.md               # Project description, setup instructions
+```
+
+## Description
+A static e-commerce website built using only HTML and CSS without any frameworks.
+
+## Team Members & Roles
+- Archie & Nidhi — Home Page
+- Pujitha & Akshay — Product Page & Product Pop-up modal
+- Maithri — Cart & Wishlist Page
+- Akshay — Checkout Page
+
+## GitHub Workflow
+- Each member works in their own branch.
+- Code is merged into the main branch after review.
