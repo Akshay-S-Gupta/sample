@@ -3,6 +3,7 @@
 ## Project Structure
 
 ```
+
 sample/
 │
 ├── index.html              # Home page (Archie & Nidhi)
