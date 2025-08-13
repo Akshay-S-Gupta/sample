@@ -1,57 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Wishlist(4)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  
+  <!-- Bootstrap CSS (match version) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/wishlist.css">
 </head>
-<body>
 
+<body>
+  <div class="header">
+    <div class="container-fluid top-header">
+      <div class="top-heading">
+        <p class="p">Summer Sale For All Back To All Back To Home Items OFF 50% <span class="top-heading-span">Shop
+            Now!</span></p>
+      </div>
+
+      <div class="dropdown-container">
+        <select name="language" id="language" class="dropdown">
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Marathi">Marathi</option>
+        </select>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid nav-container d-flex align-items-center justify-content-between">
+        <!-- Left section: Toggle + Logo -->
+        <div class="d-flex align-items-center">
+          <!-- Toggle button (mobile only) -->
+          <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">Exclusive</a>
+        </div>
+
+        <!-- Middle: Nav links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-secondary" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right section: Icons -->
+        <!-- Right section: Icons -->
+<div class="nav-icons">
+  <a href="#" class="nav-icon" title="Wishlist">
+    <i class="fa fa-heart-o" aria-hidden="true"></i>
+  </a>
+  <a href="cart.html" class="nav-icon" title="Cart">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+  </a>
+</div>
+
+      </div>
+    </nav>
+  </div>
   <div style="height:100px"></div>
 
   <main class="site">
 
-   
+
     <div class="d-flex align-items-center justify-content-between wishlist-header mb-3">
       <h2 class="wishlist-title">Wishlist(4)</h2>
       <button class="btn-move-all">Move All to Bag</button>
     </div>
 
-    
+
     <div class="row g-4">
-      
-       <div class="col-12 col-sm-6 col-md-3">
+
+      <div class="col-12 col-sm-6 col-md-3">
         <div class="wish-card">
           <div class="img-wrap">
             <img src="images/img/slider-img.png" alt="Zonko tablet" class="wish-img">
             <div class="badge-discount">-35%</div>
-            
+
             <button class="trash-btn" aria-label="Remove item">
-              
+
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6h18" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M8 6v12a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V6" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M14 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6h18" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8 6v12a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V6" stroke="#222" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M14 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" stroke="#222" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </button>
           </div>
 
-          
+
           <div class="action-bar">
             <button class="btn-add">Add to Cart</button>
           </div>
         </div>
 
-        
+
         <div class="product-meta text-center mt-2">
           <div class="product-name">Zonko tablet</div>
           <div class="product-price">
@@ -61,7 +132,7 @@
         </div>
       </div>
 
-     
+
       <div class="col-12 col-sm-6 col-md-3">
         <div class="wish-card">
           <div class="img-wrap">
@@ -69,11 +140,13 @@
             <div class="badge-discount">-35%</div>
             <button class="trash-btn" aria-label="Remove item">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6h18" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M8 6v12a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V6" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M14 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6h18" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8 6v12a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V6" stroke="#222" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M14 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" stroke="#222" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </button>
           </div>
@@ -91,7 +164,7 @@
         </div>
       </div>
 
-      
+
       <div class="col-12 col-sm-6 col-md-3">
         <div class="wish-card">
           <div class="img-wrap">
@@ -99,11 +172,13 @@
             <div class="badge-discount">-20%</div>
             <button class="trash-btn" aria-label="Remove item">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6h18" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M8 6v12a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V6" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M14 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6h18" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8 6v12a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V6" stroke="#222" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M14 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" stroke="#222" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </button>
           </div>
@@ -121,7 +196,7 @@
         </div>
       </div>
 
-    
+
       <div class="col-12 col-sm-6 col-md-3">
         <div class="wish-card">
           <div class="img-wrap">
@@ -129,11 +204,13 @@
             <div class="badge-discount">-25%</div>
             <button class="trash-btn" aria-label="Remove item">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6h18" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M8 6v12a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V6" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M14 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6h18" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8 6v12a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V6" stroke="#222" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M14 11v4" stroke="#222" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" stroke="#222" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </button>
           </div>
@@ -152,17 +229,18 @@
       </div>
     </div>
 
+
     <div style="height:60px"></div>
 
-   
+
     <div class="d-flex align-items-center justify-content-between wishlist-header mb-3">
       <h2 class="just-for-you-title">Just for you</h2>
       <button class="btn-move-all">See all</button>
     </div>
 
-   
+
     <div class="row g-4">
-      
+
       <div class="col-12 col-sm-6 col-md-3">
         <div class="wish-card">
           <div class="img-wrap">
@@ -190,7 +268,7 @@
         </div>
       </div>
 
-      
+
       <div class="col-12 col-sm-6 col-md-3">
         <div class="wish-card">
           <div class="img-wrap">
@@ -218,7 +296,7 @@
         </div>
       </div>
 
-     
+
       <div class="col-12 col-sm-6 col-md-3">
         <div class="wish-card">
           <div class="img-wrap">
@@ -246,7 +324,7 @@
         </div>
       </div>
 
-    
+
       <div class="col-12 col-sm-6 col-md-3">
         <div class="wish-card">
           <div class="img-wrap">
@@ -277,8 +355,76 @@
 
   </main>
 
+
   <div style="height:120px"></div>
 
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Column 1 -->
+      <div class="footer-column">
+        <h3>Exclusive</h3>
+        <p class="footer-title">Subscribe</p>
+        <p>Get 10% off your first order</p>
+        <div class="subscribe-box">
+          <input type="email" placeholder="Enter your email">
+          <button><i class="fa fa-paper-plane"></i></button>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-column">
+        <h4>Support</h4>
+        <p>111 Bijoy sarani, Dhaka, DH 1515, India.</p>
+        <p>exclusive@gmail.com</p>
+        <p>+91 015-88888-99</p>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-column">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Login / Register</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-column">
+        <h4>Quick Link</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5 -->
+      <div class="footer-column">
+        <h4>Follow us on our socials</h4>
+        <p>Get new exciting deals everyday</p>
+
+        <div class="social-icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© Copyright 2025. All right reserved</p>
+    </div>
+  </footer>
+  <!-- footer ends -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
