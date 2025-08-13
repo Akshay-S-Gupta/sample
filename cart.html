@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+
+<!-- Spacer -->
+<div style="height: 40px;"></div>
+   
+    <div style="height: 100px;"></div>
+
+    <main class="cart-container">
+
+        
+        <p class="breadcrumb">
+    <a href="index.html">Home</a> /
+    <a href="cart.html">Cart</a>
+</p>
+
+       
+        <section class="cart-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product-cell">
+                            <img src="images/img/smart watch.png" alt="Smartwatch">
+                            D20 pro Smartwatch
+                        </td>
+                        <td>$650</td>
+                        <td>
+                            <input type="number" value="1" min="1">
+                        </td>
+                        <td>$650</td>
+                    </tr>
+                    <tr>
+                        <td class="product-cell">
+                            <img src="images/img/headphone.png" alt="Headphone">
+                            Noise headphone
+                        </td>
+                        <td>$550</td>
+                        <td>
+                            <input type="number" value="2" min="1">
+                        </td>
+                        <td>$1100</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cart-actions">
+                <button class="return-btn" onclick="goHome()">Return to Shop</button>
+
+              <script>
+                function goHome() {
+               
+                window.location.href = "index.html"; 
+                }
+              </script>
+
+                <button class="update-btn">Update Cart</button>
+            </div>
+        </section>
+
+        
+        <section class="cart-bottom">
+            <div class="coupon">
+                <input type="text" placeholder="Coupon Code">
+                <button>Apply Coupon</button>
+            </div>
+
+            <div class="cart-total">
+                <h3>Cart Total</h3>
+                <div class="total-row">
+                    <span>Subtotal</span>
+                    <span>$1750</span>
+                </div>
+                <div class="total-row">
+                    <span>Shipping</span>
+                    <span>Free</span>
+                </div>
+                <div class="total-row total">
+                    <span>Total</span>
+                    <span>$1750</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <div style="height: 100px;"></div>
+
+
+</body>
+</html>
