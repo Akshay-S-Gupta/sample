@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Modal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <!-- Trigger -->
+    <a href="#productModal" class="btn btn-primary m-4">Show Product Modal</a>
+
+    <!-- Modal -->
+    <div id="productModal" class="modal-overlay">
+      <div class="modal-content">
+        <!-- Top Row -->
+        <div class="top-row">
+          <img
+            src="free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"
+          />
+          <input type="checkbox" id="wishlist" hidden />
+          <label for="wishlist" class="wishlist-btn">
+            <i class="bi bi-heart"></i>
+          </label>
+        </div>
+
+        <!-- Product Image -->
+        <img src="controller.png" alt="Gamepad" class="product-img" />
+
+        <!-- Color Options -->
+        <div class="color-options">
+          <label>
+            <input type="radio" name="color" value="blue" checked hidden />
+            <span class="color-circle color-blue"></span>
+          </label>
+          <label>
+            <input type="radio" name="color" value="red" hidden />
+            <span class="color-circle color-red"></span>
+          </label>
+        </div>
+
+        <!-- Title -->
+        <div class="product-title">Havic HV G-92 Gamepad</div>
+
+        <!-- Rating -->
+        <div class="rating-row">
+          <div class="stars-static">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+
+        <!-- Description -->
+        <p class="desc">
+          PlayStation 5 Controller Skin High quality vinyl with air channel
+          adhesive for easy bubble free install & mess free removal. Pressure
+          sensitive.
+        </p>
+
+        <!-- Price + Button/Quantity -->
+        <div class="price-row">
+          <span class="price">$192.00</span>
+
+          <!-- State Toggle -->
+          <input type="checkbox" id="toggle-state" hidden />
+
+          <!-- State 1: Buy Now -->
+          <label for="toggle-state" class="buy-btn state-1">Buy Now</label>
+
+          <!-- State 2: Quantity & Cart -->
+          <div class="state-2">
+            <div class="qty-selector">
+              <button class="qty-btn minus">−</button>
+              <span class="qty-number">2</span>
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="cart-btn"><i class="bi bi-cart"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
