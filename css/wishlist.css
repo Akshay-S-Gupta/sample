@@ -4,42 +4,15 @@
   --accent-red: #ff4f5a;
   --muted: #6c757d;
 }
-/*Top Header Starts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.top-header{
-  display: flex;
-  background-color: black;
-  color: white;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 13px;
-}
-
-
-.top-heading .p{
-    font-size: 15px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    margin-bottom: 0;
-}
-
-.top-heading-span{
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: 500;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
 
 }
 
-.dropdown{
-    display: block;
-    border: none;
-    background-color: black;
-    color: white;
-}
-
-
-/*Top Header Ends*/
 
 .site{
   margin: 0 var(--gap);
@@ -320,3 +293,131 @@
     flex-direction: column;
   }
 }
+
+
+
+/*Top Header Starts*/
+
+
+.top-header{
+  display: flex;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+
+.top-heading .p{
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.top-heading-span{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.dropdown{
+    display: block;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+/*Top Header Ends*/
+
+
+/*Responsive*/
+
+@media (max-width: 991px) { 
+   
+    .top-header{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .top-heading .p {
+        font-size: 9px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .dropdown{
+      font-size: 9px;
+    }
+
+    .navbar{
+    border-bottom: 1px solid #efefee;
+    margin: 0;
+    }
+
+  .category{
+   display: none;
+   }
+
+   .slider{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .slider-text, .slider-text > p{
+    font-size: 15px;
+   }
+
+   .slider-image{
+    width: 400px;
+    height: 300px;
+   }
+
+   .iphone-text{
+    font-size: 15px;
+   }
+
+   .carousel-control-prev-icon, .carousel-control-next-icon{
+    display: none;
+   }
+
+   .section-header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 50px;
+   }
+
+   .flash-sales{
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 50px;
+    padding: 0;
+   }
+
+   .flash-header{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .flash-title {
+    font-size: 20px;
+   }
+
+   .more{
+    margin-top: 40px ;
+   }
+
+}
+
+
+
+
+
+
