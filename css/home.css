@@ -420,131 +420,63 @@
 }
 
 
-/*Footer*/
-.footer {
-  background-color: #000;
-  color: white;
-  font-family: Arial, sans-serif;
-  padding: 40px 20px 0;
-  margin-top: 40px;
-}
+/*Responsive*/
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
-}
+@media (max-width: 991px) {
+    .category{
+   display: none;
+   }
 
-.footer-column {
-  flex: 1;
-  min-width: 180px;
-}
-
-.footer h3, .footer h4 {
-  margin-bottom: 15px;
-}
-
-.footer p {
-  font-size: 12px;
-  line-height: 1.6;
-  color: #aeaead;
-}
-
-.footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer ul li {
-  margin-bottom: 8px;
-}
-
-.footer ul li a {
-  color: #aeaead;
-  text-decoration: none;
-  font-size: 12px;
-}
-
-.footer ul li a:hover {
-  text-decoration: underline;
-}
-
-.subscribe-box {
-  display: flex;
-  margin-top: 10px;
-  border: 1px solid white;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.subscribe-box input {
-  flex: 1;
-  padding: 8px;
-  border: none;
-  outline: none;
-  background: transparent;
-  color: white;
-}
-
-.subscribe-box button {
-  background: none;
-  border: none;
-  color: white;
-  padding: 0 10px;
-  cursor: pointer;
-}
-
-.app-download {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.app-download img {
-  max-width: 100px;
-}
-
-.store-buttons img {
-  display: block;
-  margin-bottom: 8px;
-  max-width: 120px;
-}
-
-.social-icons {
-  margin-top: 10px;
-}
-
-.social-icons i {
-  margin-right: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.footer-bottom {
-  border-top: 1px solid #333;
-  margin-top: 20px;
-  padding: 15px 0;
-  text-align: center;
-  font-size: 13px;
-  color: #aaa;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-container {
+   .slider{
+    display: flex;
     flex-direction: column;
-    text-align: center;
+   }
+
+   .slider-text, .slider-text > p{
+    font-size: 15px;
+   }
+
+   .slider-image{
+    width: 400px;
+    height: 300px;
+   }
+
+   .iphone-text{
+    font-size: 15px;
+   }
+
+   .carousel-control-prev-icon, .carousel-control-next-icon{
+    display: none;
+   }
+
+   .section-header{
+    justify-content: center;
     align-items: center;
-  }
+    text-align: center;
+    display: flex;
+    margin: 50px;
+   }
 
-  .footer-column {
-    min-width: 100%;
-  }
-
-  .app-download {
+   .flash-sales{
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
-  }
+    margin-right: 50px;
+    padding: 0;
+   }
+
+   .flash-header{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .flash-title {
+    font-size: 20px;
+   }
+
+   .more{
+    margin-top: 40px ;
+   }
 }
 
 
