@@ -88,7 +88,7 @@ footer {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  background: #efefee;
+  background: white;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -112,6 +112,8 @@ footer {
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 12px;
+  z-index: 10; /* ensures it's on top */
+  pointer-events: none;
 }
 
 .icons {
