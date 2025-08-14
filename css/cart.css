@@ -267,12 +267,12 @@ input[type="number"] {
 
 .coupon button {
     padding: 10px 15px;
-    background-color:  #e74c3c;
+    background-color:  #db4444;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    border-color: #e74c3c;
+    border-color: #db4444;
 }
 
 .cart-total {
@@ -301,7 +301,7 @@ input[type="number"] {
 .checkout-btn {
     width: 100%;
     padding: 12px;
-    background-color:  #e74c3c;
+    background-color:  #db4444;
     color: white;
     border: none;
     border-radius: 3px;
