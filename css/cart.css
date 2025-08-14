@@ -1,3 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+/*Top Header Starts*/
+
+.top-header{
+  display: flex;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+
+.top-heading .p{
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.top-heading-span{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.dropdown{
+    display: block;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+/*Top Header Ends*/
+
+/*Navbar Starts*/
+
+.navbar{
+  border-bottom: 1px solid #efefee;
+  margin: 0 30px;
+  position: sticky;
+
+}
+
+.navbar-collapse{
+  flex-grow: 0 !important ;
+  gap: 50px;
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-control , .btn{
+  border-radius: 0 !important;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -12,6 +90,75 @@ body {
     margin-left: 135px;
     margin-right: 135px;
 }
+
+.cart-header-row,
+.cart-item-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+
+.cart-header-row {
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.cart-item-row {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.cart-item-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.product-info img {
+  width: 60px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.remove-btn {
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 .cart-table table {
     width: 100%; /* makes the table stretch */
     border-spacing: 0 15px;
@@ -120,12 +267,12 @@ input[type="number"] {
 
 .coupon button {
     padding: 10px 15px;
-    background-color:  rgba(255, 0, 0, 0.713);
+    background-color:  #db4444;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    border-color: rgba(255, 0, 0, 0.713);
+    border-color: #db4444;
 }
 
 .cart-total {
@@ -154,7 +301,7 @@ input[type="number"] {
 .checkout-btn {
     width: 100%;
     padding: 12px;
-    background-color:  rgba(255, 0, 0, 0.713);
+    background-color:  #db4444;
     color: white;
     border: none;
     border-radius: 3px;
@@ -177,3 +324,313 @@ input[type="number"] {
 .return-btn:hover, .update-btn:hover, .checkout-btn:hover, .coupon button:hover {
     transform: scale(1.05);
 }
+/* navigation link */
+
+.nav-icons a {
+    color: black;          /* normal state */
+    text-decoration: none; /* remove underline */
+}
+
+.nav-icons a:hover {
+    color: #6c757d; /* optional: change color on hover */
+}
+
+/*Footer*/
+.footer {
+  background-color: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px 0;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer h3, .footer h4 {
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #aeaead;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer ul li a {
+  color: #aeaead;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.subscribe-box {
+  display: flex;
+  margin-top: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.subscribe-box button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.app-download {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-download img {
+  max-width: 100px;
+}
+
+.store-buttons img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 120px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+.cart-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    align-items: flex-start;
+}
+
+/* Left side: return + update + coupon */
+.left-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* space between rows */
+    align-items: flex-start;
+}
+.coupon {
+    display: flex;
+    gap: 10px; /* space between coupon input & button */
+}
+.top-buttons {
+    display: flex;
+    gap: 20px; /* space between Return to Shop & Update Cart */
+}
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* align Update Cart to right */
+    gap: 40px;
+}
+
+.update-btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 1px solid #000;
+    background: white;
+    cursor: pointer;
+}
+.return-btn {
+    font-size: 17px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background: white;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    width: auto;
+}
+.cart-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px; /* push both sections down */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .app-download {
+    flex-direction: column;
+  }
+}
+
+
+/* Chat Icon */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #db4444;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+/* Chat Box */
+.chat-box {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+/* Show chat box when checkbox is checked */
+/* Show chat box when toggle is checked */
+#chat-toggle:checked ~ .chat-box {
+  display: flex;
+}
+
+/* Chat Box Container */
+.chat-box {
+  position: fixed;
+  bottom: 80px; /* Keeps above footer */
+  right: 20px;
+  width: 300px;
+  max-height: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  flex-direction: column;
+  display: none;
+  z-index: 1000;
+}
+
+/* Header */
+.chat-header {
+  background: #db4444;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+/* Chat Body */
+.chat-body {
+  padding: 10px;
+  height: 150px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+/* Input Area */
+.chat-input {
+  border-top: 1px solid #ccc;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chat-input input {
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 14px;
+}
+.send-btn {
+  background: #db4444;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background: #b83737;
+}
+/* Prevent overlap with footer */
+main {
+  padding-bottom: 20px; /* Adjust to chat height */
+}
+
+
