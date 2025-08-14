@@ -516,6 +516,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  justify-content: flex-end;
   margin-right:10px;
   gap: 10px;
   border: rgb(219, 68, 68);
@@ -529,6 +530,10 @@ body {
   width: 40px;
   font-style: bold;
   color:white;
+
+}
+.leftA:hover{
+  transform: scale(1.1);
 }
 .rightA {
   border-radius: 50%;
@@ -539,6 +544,9 @@ body {
   width: 40px;
   font-style: bold;
   color:white;
+}
+.rightA:hover{
+  transform: scale(1.1);
 }
 .con {
  
@@ -586,6 +594,9 @@ body {
     cursor: pointer;
     font-size: 16px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.icon-exp i:hover{
+  transform: scale(1.1);
 }
 
 .card-ex h5 {
@@ -636,39 +647,33 @@ body {
     margin-top: 40px;
 
 }
-.wrap{
-  width:250px;
-  height:35px;
-  
-  text-align: center;
-  margin-top: 40px;
-  margin-left: 500px;
-  border: none;
- border-radius: 5px;
-  background-color: rgb(219, 68, 68);
-  
 
-}
-.wrap button{
-    border-radius: 5px;
-  background-color: rgb(219, 68, 68);
-    color:white;
-    width:100%;
-    height:100%;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
+.more{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
+.more:hover{
+  transform: scale(1.1);
+}
 
 .grid-container {
     display: grid;
+    position: relative;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     
     height: 500px;
     row-gap: 20px;   
     column-gap: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
 }
 .item {
     background-color: #222;
@@ -687,11 +692,114 @@ body {
    width:100%;
   background-color: #010618;}
 
+  .i1{
+    
+  height:100%;
+   width:100%;
+  background-color: #010618;
+  }
+  .i2{
+    
+  height:100%;
+   width:100%;
+  background-color: #010618;
+  }
    .imgs{
     width:100%;
     height: 100%;
 
    }
+
+
+   .image-containerr {
+    position: relative;
+    width: 500px;   
+    height: 250px;  
+}
+ 
+.image-containerr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.vc-container{
+    position: relative;
+  width: 100%;
+    height: 100%;
+    
+}
+.vc-container video{
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+}
+
+
+
+.overlay-text a {
+    color: white;
+    text-decoration: underline;
+    
+    font-size: 10px;
+    margin-left: 28px;
+   
+}
+.overlay-text-img {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+   
+    
+    
+}
+
+.overlay-text-img h5 {
+    color: white;  
+    font-size: 17px;
+    margin-left: 14px;
+    position: relative;
+    bottom: -10px;
+   
+}
+.overlay-text-img p{
+    color: white;
+    
+    font-size: 11px;
+    margin-left: 14px;
+   
+   
+}
+.overlay-text-img a {
+    color: white;
+    text-decoration: underline;
+    
+    font-size: 8px;
+    margin-left: 14px;
+    position: relative;
+    top: -31px;
+   
+}
+
+
+   
+  
    
     .card-container {
         display: grid;
@@ -700,40 +808,42 @@ body {
         max-width: 900px;
         margin: 50px auto;
         text-align: center;
-        margin-left:150px;
     }
 
     .support {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 250px;
+        margin-top: 30px;
     }
 
     .icon-wrapper {
-        background-color: #ccc; /* outer circle */
+        background-color: #ccc; 
         border-radius: 50%;
         padding: 8px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        
     }
 
     .icon-wrapper-inner {
-        background-color: black; /* inner circle */
+        background-color: black;
         color: white;
         border-radius: 50%;
         padding: 15px;
         font-size: 20px;
     }
 
-    h3 {
-        font-size: 16px;
+   .support h3 {
+        font-size: 15px;
         font-weight: bold;
         margin-top: 15px;
     }
 
-    p {
-        font-size: 14px;
+    .support p {
+        font-size: 13px;
         color: #555;
         margin-top: 5px;
     }
