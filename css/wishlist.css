@@ -3,6 +3,7 @@
   --card-border: #e6e6e6;
   --accent-red: #ff4f5a;
   --muted: #6c757d;
+  
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -707,3 +708,25 @@ main {
 
 .heart-toggle .heart-input:checked ~ i.fa-heart-o { display: none !important; }
 .heart-toggle .heart-input:checked ~ i.fa-heart   { display: inline-block !important; color: black !important; }
+
+
+/* Special Offer Banner Styling */
+.special-offer-banner {
+    background: linear-gradient(135deg, rgb(58, 56, 56), black);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    animation: fadeIn 1s ease-in-out;
+}
+.special-offer-banner .btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+.special-offer-banner .btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+/* Simple fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
