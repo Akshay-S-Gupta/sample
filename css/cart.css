@@ -267,12 +267,12 @@ input[type="number"] {
 
 .coupon button {
     padding: 10px 15px;
-    background-color:  #e74c3c;
+    background-color:  #db4444;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    border-color: #e74c3c;
+    border-color: #db4444;
 }
 
 .cart-total {
@@ -301,7 +301,7 @@ input[type="number"] {
 .checkout-btn {
     width: 100%;
     padding: 12px;
-    background-color:  #e74c3c;
+    background-color:  #db4444;
     color: white;
     border: none;
     border-radius: 3px;
@@ -516,5 +516,121 @@ input[type="number"] {
   }
 }
 
+
+/* Chat Icon */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #db4444;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+/* Chat Box */
+.chat-box {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+/* Show chat box when checkbox is checked */
+/* Show chat box when toggle is checked */
+#chat-toggle:checked ~ .chat-box {
+  display: flex;
+}
+
+/* Chat Box Container */
+.chat-box {
+  position: fixed;
+  bottom: 80px; /* Keeps above footer */
+  right: 20px;
+  width: 300px;
+  max-height: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  flex-direction: column;
+  display: none;
+  z-index: 1000;
+}
+
+/* Header */
+.chat-header {
+  background: #db4444;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+/* Chat Body */
+.chat-body {
+  padding: 10px;
+  height: 150px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+/* Input Area */
+.chat-input {
+  border-top: 1px solid #ccc;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chat-input input {
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 14px;
+}
+.send-btn {
+  background: #db4444;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background: #b83737;
+}
+/* Prevent overlap with footer */
+main {
+  padding-bottom: 20px; /* Adjust to chat height */
+}
 
 
