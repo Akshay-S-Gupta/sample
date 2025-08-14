@@ -238,6 +238,16 @@ footer {
 .wishlist-btn:active {
   animation: heartPop 0.3s ease;
 }
+.wishlist-icon i {
+  color: gray; /* default */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.wishlist-checkbox:checked + i {
+  color: red; /* heart turns red when checked */
+}
+
 
 @keyframes heartPop {
   0% { transform: scale(1); }
