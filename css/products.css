@@ -88,7 +88,7 @@ footer {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  background: #efefee;
+  background: white;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -112,6 +112,8 @@ footer {
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 12px;
+  z-index: 10; /* ensures it's on top */
+  pointer-events: none;
 }
 
 .icons {
@@ -238,6 +240,16 @@ footer {
 .wishlist-btn:active {
   animation: heartPop 0.3s ease;
 }
+.wishlist-icon i {
+  color: gray; /* default */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.wishlist-checkbox:checked + i {
+  color: red; /* heart turns red when checked */
+}
+
 
 @keyframes heartPop {
   0% { transform: scale(1); }
