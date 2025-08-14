@@ -573,7 +573,7 @@
 .fa-heart {
   color: black;
 }
-
+                 /* chat box starts */
 /* Chat Icon */
 .chat-icon {
   position: fixed;
@@ -687,7 +687,23 @@
 }
 /* Prevent overlap with footer */
 main {
-  padding-bottom: 20px; /* Adjust to chat height */
+  padding-bottom: 20px; 
+}
+               /* chatbox ends */
+
+
+.heart-toggle { cursor: pointer; position: relative; }
+.heart-input {
+  position: absolute;
+  opacity: 0;
+  width: 0; height: 0;
+  pointer-events: none;
 }
 
 
+.heart-toggle i.fa-heart-o { display: inline-block !important; }
+.heart-toggle i.fa-heart    { display: none !important; }
+
+
+.heart-toggle .heart-input:checked ~ i.fa-heart-o { display: none !important; }
+.heart-toggle .heart-input:checked ~ i.fa-heart   { display: inline-block !important; color: black !important; }
