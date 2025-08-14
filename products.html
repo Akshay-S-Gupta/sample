@@ -23,16 +23,30 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
-    <!--Header-->
-    <div class="header">
-      <div class="container-fluid top-header">
-        <div class="top-heading">
-          <p class="p">
-            Summer Sale For All Back To All Back To Home Items OFF 50%
-            <span class="top-heading-span">Shop Now!</span>
-          </p>
-        </div>
+<body>
+
+  <!-- Loading overlay -->
+  <!-- <div id="loadingOverlay" style="
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: white;
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  ">
+    <div class="spinner-border text-primary" role="status" style="width: 4rem; height: 4rem;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div> -->
+
+  <!--Header-->
+  <div class="header">
+    <div class="container-fluid top-header">
+      <div class="top-heading">
+        <p class="p">Summer Sale For All Back To All Back To Home Items OFF 50% <span class="top-heading-span">Shop
+            Now!</span></p>
+      </div>
 
         <div class="dropdown-container">
           <select name="language" id="language" class="dropdown">
@@ -109,201 +123,233 @@
 
     <!--Header Ends-->
 
-    <div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
+
+
+  <!-- Product Container -->
+  <div class="container-fluid px-4">
+    <div class="row justify-content-center">
+      <div class="container">
+      <div class="page-layout">
+  
+  <!-- Sidebar Filters -->
+  <aside class="filter-sidebar">
+    
+    <!-- Category Filter -->
+    <div class="filter-group">
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="">All</option>
+        <option value="phones">Phones</option>
+        <option value="speakers">Speakers</option>
+        <option value="watches">Watches</option>
+        <option value="accessories">Accessories</option>
+      </select>
     </div>
 
-    <!-- Product Container -->
-    <div class="container-fluid px-4">
-      <div class="row justify-content-center">
-        <div class="container">
-          <div class="product-container">
-            <!-- Product 1 -->
-            <div class="product-card" style="animation-delay: 0s">
-              <div class="product-image">
-                <span class="discount-badge">-20%</span>
-                <a href="#popup1"
-                  ><img src="images/img/p9.jpg" alt="Gucci Duffle Bag"
-                /></a>
-                <div class="icons">
-                  <label class="icon wishlist-icon">
-                    <input type="checkbox" hidden class="wishlist-checkbox" />
-                    <i class="fa fa-heart"></i>
-                  </label>
-                  <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-title">Gucci Duffle Bag</h4>
-                <div class="price">
-                  <span class="new-price">$960</span>
-                  <span class="old-price">$1200</span>
-                </div>
-                <div class="rating">
-                  <span class="stars">⭐⭐⭐⭐⭐</span>
-                  <span class="reviews">(88)</span>
-                </div>
-              </div>
-            </div>
+    <!-- Price Range -->
+    <div class="filter-group">
+  <label for="price">Price Range</label>
+  <input type="range" id="price" min="0" max="5000" step="100" value="2500">
+  <div class="price-labels">
+    <span>₹0</span>
+    <span>₹2500</span>
+    <span>₹5000+</span>
+  </div>
+</div>
 
-            <!-- Product 2 -->
-            <div class="product-card" style="animation-delay: 0.1s">
-              <div class="product-image">
-                <span class="discount-badge">-30%</span>
-                <a href="#popup2"
-                  ><img src="images/img/p10.jpg" alt="RGB Liquid CPU Cooler"
-                /></a>
-                <div class="icons">
-                  <label class="icon wishlist-icon">
-                    <input type="checkbox" hidden class="wishlist-checkbox" />
-                    <i class="fa fa-heart"></i>
-                  </label>
-                  <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-title">RGB Liquid CPU Cooler</h4>
-                <div class="price">
-                  <span class="new-price">$1960</span>
-                  <span class="old-price">$2500</span>
-                </div>
-                <div class="rating">
-                  <span class="stars">⭐⭐⭐⭐⭐</span>
-                  <span class="reviews">(64)</span>
-                </div>
-              </div>
-            </div>
 
-            <!-- Product 3 -->
-            <div class="product-card" style="animation-delay: 0.2s">
-              <div class="product-image">
-                <span class="discount-badge">-15%</span>
-                <a href="#popup3"
-                  ><img src="images/img/p11.jpg" alt="GP11 Shooter USB Gamepad"
-                /></a>
-                <div class="icons">
-                  <label class="icon wishlist-icon">
-                    <input type="checkbox" hidden class="wishlist-checkbox" />
-                    <i class="fa fa-heart"></i>
-                  </label>
-                  <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-title">GP11 Shooter USB Gamepad</h4>
-                <div class="price">
-                  <span class="new-price">$550</span>
-                  <span class="old-price">$650</span>
-                </div>
-                <div class="rating">
-                  <span class="stars">⭐⭐⭐⭐</span>
-                  <span class="reviews">(102)</span>
-                </div>
-              </div>
-            </div>
+    <!-- Discount Filter -->
+    <!-- Discount Filter -->
+<div class="filter-group">
+  <label>Discount</label>
+  <div class="checkbox-group">
+    <label><input type="checkbox" id="disc10"> 10% or more</label>
+    <label><input type="checkbox" id="disc20"> 20% or more</label>
+    <label><input type="checkbox" id="disc50"> 50% or more</label>
+  </div>
+</div>
 
-            <!-- Product 4 -->
-            <div class="product-card" style="animation-delay: 0.3s">
-              <div class="product-image">
-                <span class="discount-badge">-10%</span>
-                <a href="#popup4"
-                  ><img
-                    src="images/img/slider-img.png"
-                    alt="Quilted Satin Jacket"
-                /></a>
-                <div class="icons">
-                  <label class="icon wishlist-icon">
-                    <input type="checkbox" hidden class="wishlist-checkbox" />
-                    <i class="fa fa-heart"></i>
-                  </label>
-                  <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-title">Quilted Satin Jacket</h4>
-                <div class="price">
-                  <span class="new-price">$750</span>
-                  <span class="old-price">$830</span>
-                </div>
-                <div class="rating">
-                  <span class="stars">⭐⭐⭐⭐⭐</span>
-                  <span class="reviews">(50)</span>
-                </div>
-              </div>
-            </div>
 
-            <!-- Product 5 -->
-            <div class="product-card" style="animation-delay: 0.4s">
-              <div class="product-image">
-                <span class="discount-badge">-25%</span>
-                <a href="#popup5"
-                  ><img src="images/img/tp1.jpg" alt="ASUS FHD Gaming Laptop"
-                /></a>
-                <div class="icons">
-                  <label class="icon wishlist-icon">
-                    <input type="checkbox" hidden class="wishlist-checkbox" />
-                    <i class="fa fa-heart"></i>
-                  </label>
-                  <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-title">ASUS FHD Gaming Laptop</h4>
-                <div class="price">
-                  <span class="new-price">$960</span>
-                  <span class="old-price">$1280</span>
-                </div>
-                <div class="rating">
-                  <span class="stars">⭐⭐⭐⭐⭐</span>
-                  <span class="reviews">(73)</span>
-                </div>
-              </div>
-            </div>
+    <!-- Ratings Filter -->
+    <!-- <div class="filter-group">
+      <label>Ratings</label>
+      <div>
+        <input type="checkbox" id="rate4"> <label for="rate4">★★★★ & up</label><br>
+        <input type="checkbox" id="rate3"> <label for="rate3">★★★ & up</label>
+      </div>
+    </div> -->
 
-            <!-- Product 6 -->
-            <div class="product-card" style="animation-delay: 0.5s">
-              <div class="product-image">
-                <span class="discount-badge">-18%</span>
-                <a href="#popup6"
-                  ><img src="images/img/tp2.jpg" alt="IPS LCD Gaming Monitor"
-                /></a>
-                <div class="icons">
-                  <label class="icon wishlist-icon">
-                    <input type="checkbox" hidden class="wishlist-checkbox" />
-                    <i class="fa fa-heart"></i>
-                  </label>
-                  <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-title">IPS LCD Gaming Monitor</h4>
-                <div class="price">
-                  <span class="new-price">$1160</span>
-                  <span class="old-price">$1410</span>
-                </div>
-                <div class="rating">
-                  <span class="stars">⭐⭐⭐⭐</span>
-                  <span class="reviews">(91)</span>
-                </div>
+    <!-- Color Filter -->
+    <div class="filter-group">
+      <label>Color</label>
+      <div class="color-options">
+        <span class="color-box" style="background: black;"></span>
+        <span class="color-box" style="background: red;"></span>
+        <span class="color-box" style="background: blue;"></span>
+        <span class="color-box" style="background: green;"></span>
+        <span class="color-box" style="background: white; border: 1px solid #ccc;"></span>
+      </div>
+    </div>
+
+  </aside>
+        <div class="product-container">
+
+          <!-- Product 1 -->
+          <div class="product-card" style="animation-delay: 0s;">
+            <div class="product-image">
+              <span class="discount-badge">-20%</span>
+              <a href="#popup1"><img src="images/img/p9.jpg" alt="Hp EVO Laptop"></a>
+              <div class="icons">
+                <label class="icon wishlist-icon">
+                  <input type="checkbox" hidden class="wishlist-checkbox">
+                  <i class="fa fa-heart"></i>
+                </label>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
               </div>
             </div>
+            <div class="product-info">
+              <h4 class="product-title">Hp EVO Laptop</h4>
+              <div class="price">
+                <span class="new-price">$960</span>
+                <span class="old-price">$1200</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">(88)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card" style="animation-delay: 0.1s;">
+            <div class="product-image">
+              <span class="discount-badge">-30%</span>
+              <a href="#popup2"><img src="images/img/p10.jpg" alt="3M PELTOR X4P5E"></a>
+              <div class="icons">
+                <label class="icon wishlist-icon">
+                  <input type="checkbox" hidden class="wishlist-checkbox">
+                  <i class="fa fa-heart"></i>
+                </label>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4 class="product-title">3M PELTOR X4P5E</h4>
+              <div class="price">
+                <span class="new-price">$1960</span>
+                <span class="old-price">$2500</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">(64)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card" style="animation-delay: 0.2s;">
+            <div class="product-image">
+              <span class="discount-badge">-15%</span>
+              <a href="#popup3"><img src="images/img/p11.jpg" alt="Amazon Echo Show 5"></a>
+              <div class="icons">
+                <label class="icon wishlist-icon">
+                  <input type="checkbox" hidden class="wishlist-checkbox">
+                  <i class="fa fa-heart"></i>
+                </label>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4 class="product-title">Amazon Echo Show 5</h4>
+              <div class="price">
+                <span class="new-price">$550</span>
+                <span class="old-price">$650</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐</span>
+                <span class="reviews">(102)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card" style="animation-delay: 0.3s;">
+            <div class="product-image">
+              <span class="discount-badge">-10%</span>
+              <a href="#popup4"><img src="images/img/slider-img.png" alt="Zonko Tablet"></a>
+              <div class="icons">
+                <label class="icon wishlist-icon">
+                  <input type="checkbox" hidden class="wishlist-checkbox">
+                  <i class="fa fa-heart"></i>
+                </label>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4 class="product-title">Zonko Tablet</h4>
+              <div class="price">
+                <span class="new-price">$750</span>
+                <span class="old-price">$830</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">(50)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card" style="animation-delay: 0.4s;">
+            <div class="product-image">
+              <span class="discount-badge">-25%</span>
+              <a href="#popup5"><img src="images/img/tp1.jpg" alt="Samsung Tab"></a>
+              <div class="icons">
+                <label class="icon wishlist-icon">
+                  <input type="checkbox" hidden class="wishlist-checkbox">
+                  <i class="fa fa-heart"></i>
+                </label>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4 class="product-title">Samsung Tab</h4>
+              <div class="price">
+                <span class="new-price">$960</span>
+                <span class="old-price">$1280</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">(73)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card" style="animation-delay: 0.5s;">
+            <div class="product-image">
+              <span class="discount-badge">-18%</span>
+              <a href="#popup6"><img src="images/img/tp2.jpg" alt="Noise Colorfit Smartwatch"></a>
+              <div class="icons">
+                <label class="icon wishlist-icon">
+                  <input type="checkbox" hidden class="wishlist-checkbox">
+                  <i class="fa fa-heart"></i>
+                </label>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4 class="product-title">Noise Colorfit Smartwatch</h4>
+              <div class="price">
+                <span class="new-price">$1160</span>
+                <span class="old-price">$1410</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐</span>
+                <span class="reviews">(91)</span>
+              </div>
+            </div>
+          </div>
 
             <!-- Product 7 -->
             <div class="product-card" style="animation-delay: 0.6s">
@@ -389,33 +435,31 @@
               </div>
             </div>
 
-            <!-- Product 10 -->
-            <div class="product-card" style="animation-delay: 0.9s">
-              <div class="product-image">
-                <span class="discount-badge">-10%</span>
-                <a href="#popup10"
-                  ><img src="images/img/tp6.png" alt="Gaming Mouse"
-                /></a>
-                <div class="icons">
-                  <label class="icon wishlist-icon">
-                    <input type="checkbox" hidden class="wishlist-checkbox" />
-                    <i class="fa fa-heart"></i>
-                  </label>
-                  <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-title">Gaming Mouse</h4>
-                <div class="price">
-                  <span class="new-price">$80</span>
-                  <span class="old-price">$90</span>
-                </div>
-                <div class="rating">
-                  <span class="stars">⭐⭐⭐⭐</span>
-                  <span class="reviews">(55)</span>
-                </div>
+          <!-- Product 10 -->
+          <div class="product-card" style="animation-delay: 0.9s;">
+            <div class="product-image">
+              <span class="discount-badge">-10%</span>
+              <a href="#popup10"><img src="images/img/tp6.png" alt="RGB Liquid CPU Cooler"></a>
+              <div class="icons">
+                <label class="icon wishlist-icon">
+                  <input type="checkbox" hidden class="wishlist-checkbox">
+                  <i class="fa fa-heart"></i>
+                </label>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
               </div>
             </div>
+            <div class="product-info">
+              <h4 class="product-title">RGB Liquid CPU Cooler</h4>
+              <div class="price">
+                <span class="new-price">$80</span>
+                <span class="old-price">$90</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐</span>
+                <span class="reviews">(55)</span>
+              </div>
+            </div>
+          </div>
 
             <!-- Product 11 -->
             <div class="product-card" style="animation-delay: 1s">
@@ -664,9 +708,27 @@
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>© Copyright 2025. All right reserved</p>
-      </div>
-    </footer>
-  </body>
+    <div class="footer-bottom">
+      <p>© Copyright 2025. All right reserved</p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    window.addEventListener('load', function () {
+      const loadingOverlay = document.getElementById('loadingOverlay');
+      setTimeout(() => {
+        if (loadingOverlay) {
+          loadingOverlay.style.display = 'none';
+        }
+      }, 3000);
+    });
+  </script> -->
+
+
+</body>
+
 </html>
