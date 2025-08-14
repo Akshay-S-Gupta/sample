@@ -8,7 +8,6 @@
 
 }
 
-
 /*Top Header Starts*/
 
 .top-header{
@@ -17,7 +16,7 @@
   color: white;
   align-items: center;
   justify-content: space-evenly;
-  padding: 13px;
+  padding: 10px;
 }
 
 
@@ -46,6 +45,37 @@
 
 /*Top Header Ends*/
 
+/*Navbar Starts*/
+
+.navbar{
+  border-bottom: 1px solid #efefee;
+  margin: 0 30px;
+  position: sticky;
+
+}
+
+.navbar-collapse{
+  flex-grow: 0 !important ;
+  gap: 50px;
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-control , .btn{
+  border-radius: 0 !important;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -60,6 +90,75 @@ body {
     margin-left: 135px;
     margin-right: 135px;
 }
+
+.cart-header-row,
+.cart-item-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+
+.cart-header-row {
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.cart-item-row {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.cart-item-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.product-info img {
+  width: 60px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.remove-btn {
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 .cart-table table {
     width: 100%; /* makes the table stretch */
     border-spacing: 0 15px;
@@ -168,12 +267,12 @@ input[type="number"] {
 
 .coupon button {
     padding: 10px 15px;
-    background-color:  rgba(255, 0, 0, 0.713);
+    background-color:  #e74c3c;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    border-color: rgba(255, 0, 0, 0.713);
+    border-color: #e74c3c;
 }
 
 .cart-total {
@@ -202,7 +301,7 @@ input[type="number"] {
 .checkout-btn {
     width: 100%;
     padding: 12px;
-    background-color:  rgba(255, 0, 0, 0.713);
+    background-color:  #e74c3c;
     color: white;
     border: none;
     border-radius: 3px;
@@ -224,6 +323,16 @@ input[type="number"] {
 
 .return-btn:hover, .update-btn:hover, .checkout-btn:hover, .coupon button:hover {
     transform: scale(1.05);
+}
+/* navigation link */
+
+.nav-icons a {
+    color: black;          /* normal state */
+    text-decoration: none; /* remove underline */
+}
+
+.nav-icons a:hover {
+    color: #6c757d; /* optional: change color on hover */
 }
 
 /*Footer*/
@@ -335,7 +444,62 @@ input[type="number"] {
   font-size: 13px;
   color: #aaa;
 }
+.cart-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    align-items: flex-start;
+}
 
+/* Left side: return + update + coupon */
+.left-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* space between rows */
+    align-items: flex-start;
+}
+.coupon {
+    display: flex;
+    gap: 10px; /* space between coupon input & button */
+}
+.top-buttons {
+    display: flex;
+    gap: 20px; /* space between Return to Shop & Update Cart */
+}
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* align Update Cart to right */
+    gap: 40px;
+}
+
+.update-btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 1px solid #000;
+    background: white;
+    cursor: pointer;
+}
+.return-btn {
+    font-size: 17px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background: white;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    width: auto;
+}
+.cart-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px; /* push both sections down */
+}
+
+
+/* Responsive */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -351,8 +515,6 @@ input[type="number"] {
     flex-direction: column;
   }
 }
-
-
 
 
 

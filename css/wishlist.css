@@ -330,6 +330,42 @@
     background-color: black;
     color: white;
 }
+.navbar{
+  border-bottom: 1px solid #efefee;
+  margin: 0 30px;
+  position: sticky;
+
+}
+
+.navbar-collapse{
+  flex-grow: 0 !important ;
+  gap: 50px;
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+.nav-icon {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-icon:hover {
+  color: #444; /* optional hover effect */
+}
+
+.form-control , .btn{
+  border-radius: 0 !important;
+}
 
 
 /*Top Header Ends*/
