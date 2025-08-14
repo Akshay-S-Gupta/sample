@@ -170,7 +170,7 @@
               <span>Total</span>
               <span>$1750</span>
             </div>
-            <button class="checkout-btn">Proceed to Checkout</button>
+            <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
           </div>
         </div>
       </section>
@@ -179,6 +179,28 @@
 
 
   <div style="height: 50px;"></div>
+
+  <!-- Chat Toggle (Hidden Checkbox) -->
+  <input type="checkbox" id="chat-toggle" hidden>
+
+  <!-- Chat Icon -->
+  <label for="chat-toggle" class="chat-icon">💬</label>
+
+  <!-- Chat Box -->
+  <div class="chat-box">
+    <div class="chat-header">
+      Assistant
+      <label for="chat-toggle" class="close-btn">×</label>
+    </div>
+    <div class="chat-body">
+      <p>Hello! How can I help you today?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message..." />
+      <button type="button" class="send-btn">➤</button>
+    </div>
+  </div>
+
   <!-- footer -->
   <!--Footer-->
   <footer class="footer">
