@@ -485,6 +485,7 @@ body {
   }
 }
 .product-card .product-info .product-title {
+  text-align: center;
   font-size: 16px;
   font-weight: 600;
   color: #333;
@@ -657,6 +658,18 @@ body {
   .text-center-mobile {
     text-align: center !important;
   }
+}
+
+.contact-section h3 {
+  color: #db4444;
+  font-family: "Inter", sans-serif;
+}
+.contact-section .card {
+  border: none;
+}
+.contact-section .contact-info {
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /*# sourceMappingURL=main.css.map */
