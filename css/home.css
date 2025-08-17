@@ -677,7 +677,7 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
     margin-left: 28px;
    
 }
-.overlay-text-img {
+
 .overlay-text-img {
     position: absolute;
     bottom: 0; 
@@ -697,10 +697,6 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
 .overlay-text-img h5 {
     color: white;  
     font-size: 17px;
-
-.overlay-text-img h5 {
-    color: white;  
-    font-size: 17px;
     margin-left: 14px;
     position: relative;
     bottom: -10px;
@@ -724,7 +720,6 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
    
    
 }
-.overlay-text-img a {
 .overlay-text-img a {
     color: white;
     text-decoration: underline;
@@ -787,14 +782,11 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
 
    .support h3 {
         font-size: 15px;
-   .support h3 {
-        font-size: 15px;
         font-weight: bold;
         margin-top: 15px;
     }
 
-    .support p {
-        font-size: 13px;
+
     .support p {
         font-size: 13px;
         color: #555;
@@ -1009,8 +1001,4 @@ main {
 
 }
 
-
 }
-
-
-
