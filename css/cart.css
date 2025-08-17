@@ -510,7 +510,44 @@ input[type="number"] {
     text-align: center;
     align-items: center;
   }
+  .cart-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .cart-header-row,
+  .cart-item-row {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .cart-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .left-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
 
+  /* Hide coupon box & Apply Coupon button */
+  .coupon {
+    display: none !important;
+  }
+
+  /* Hide product names */
+  .product-info span {
+    display: none !important;
+  }
+
+  .update-btn {
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+
+  .right-section {
+    align-items: flex-start;
+    width: 100%;
+  }
   .footer-column {
     min-width: 100%;
   }
@@ -518,7 +555,21 @@ input[type="number"] {
   .app-download {
     flex-direction: column;
   }
+
+  .cart-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .update-cart-btn {
+    order: -1;
+  }
+  .coupon input[type="text"] {
+    width: 100%;
+    max-width: 200px;
+  }
 }
+
 
 
 /* Chat Icon */

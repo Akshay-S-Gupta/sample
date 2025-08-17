@@ -500,7 +500,9 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
 }
 .leftA:hover{
   transform: scale(1.1);
+
 }
+
 .rightA {
   border-radius: 50%;
   background-color: rgb(219, 68, 68);
@@ -569,6 +571,7 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
 .grid-container {
     display: grid;
     position: relative;
+    position: relative;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     
@@ -597,6 +600,18 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
    width:100%;
   background-color: #010618;}
 
+  .i1{
+    
+  height:100%;
+   width:100%;
+  background-color: #010618;
+  }
+  .i2{
+    
+  height:100%;
+   width:100%;
+  background-color: #010618;
+  }
   .i1{
     
   height:100%;
@@ -663,6 +678,7 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
    
 }
 .overlay-text-img {
+.overlay-text-img {
     position: absolute;
     bottom: 0; 
     left: 0;
@@ -673,12 +689,24 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
    
     
     
+   
+    
+    
 }
 
 .overlay-text-img h5 {
     color: white;  
     font-size: 17px;
+
+.overlay-text-img h5 {
+    color: white;  
+    font-size: 17px;
     margin-left: 14px;
+    position: relative;
+    bottom: -10px;
+   
+}
+.overlay-text-img p{
     position: relative;
     bottom: -10px;
    
@@ -690,7 +718,13 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
     margin-left: 14px;
    
    
+    
+    font-size: 11px;
+    margin-left: 14px;
+   
+   
 }
+.overlay-text-img a {
 .overlay-text-img a {
     color: white;
     text-decoration: underline;
@@ -699,8 +733,13 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
     margin-left: 14px;
     position: relative;
     top: -31px;
+    margin-left: 14px;
+    position: relative;
+    top: -31px;
    
 }
+
+
 
 
    
@@ -721,9 +760,12 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
         align-items: center;
         width: 250px;
         margin-top: 30px;
+        width: 250px;
+        margin-top: 30px;
     }
 
     .icon-wrapper {
+        background-color: #ccc; 
         background-color: #ccc; 
         border-radius: 50%;
         padding: 8px;
@@ -731,9 +773,11 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
         align-items: center;
         justify-content: center;
         
+        
     }
 
     .icon-wrapper-inner {
+        background-color: black;
         background-color: black;
         color: white;
         border-radius: 50%;
@@ -743,10 +787,14 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
 
    .support h3 {
         font-size: 15px;
+   .support h3 {
+        font-size: 15px;
         font-weight: bold;
         margin-top: 15px;
     }
 
+    .support p {
+        font-size: 13px;
     .support p {
         font-size: 13px;
         color: #555;
