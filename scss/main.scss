@@ -1,3 +1,7 @@
+// Import shared variables and mixins first
 @import "variables";
 @import "mixins";
+
+// Import component styles
 @import "checkout";
+@import "products";
