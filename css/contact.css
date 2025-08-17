@@ -14,7 +14,7 @@ body {
 }
 
 .left-column {
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #efefee;
   border-radius: 4px;
   background-color: #fff;
 }
@@ -56,15 +56,13 @@ body {
 
 .right-column {
   border-radius: 4px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form-container {
   padding: 32px;
 }
 
-.row {
-}
+
 
 .form-control {
   height: 48px;
@@ -81,11 +79,11 @@ textarea.form-control {
 }
 
 .submit-btn {
-  background-color: #db4444;
-  color: white;
-  padding: 10px 30px;
-  border: none;
-  font-weight: 500;
+  background-color: #db4444 !important;
+  color: white !important;
+  padding: 10px 30px !important;
+  border: none !important;
+  font-weight: 500 !important;
 }
 
 .submit-btn:hover {

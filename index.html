@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exclusive</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/Favicon/site.webmanifest">
+
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/home.css" />
 
@@ -68,7 +75,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="/products.html">Products</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
             </ul>
             <form class="d-flex" role="search">
@@ -127,64 +134,17 @@
         <div class="carousel-inner">
           <!--Carousel Item 1-->
           <div class="carousel-item active">
-            <div class="slider">
-              <div class="slider-text">
-                <div class="iphone">
-                  <img src="images/Apple-logo.png" alt="" class="iphone-logo" />
-                  <p class="iphone-text">iPhone 14 Series</p>
-                </div>
-                <p>Up to 10% off Voucher</p>
-                <button>Shop Now</button>
-              </div>
-
-              <div class="img">
-                <img src="images/Hero_image1.png" alt="" class="slider-image" />
-              </div>
-            </div>
-          </div>
+            <a href="products.html"><img src="images/Iphone.png" class="d-block w-100" alt="..."></a>
+        </div>
 
           <!--Carousel Item 2-->
           <div class="carousel-item">
-            <div class="slider">
-              <div class="slider-text">
-                <div class="iphone">
-                  <img src="images/Apple-logo.png" alt="" class="iphone-logo" />
-                  <p class="iphone-text">iPhone 14 Series</p>
-                </div>
-                <p>Amazing Offers on Android Phones</p>
-                <button>Shop Now</button>
-              </div>
-
-              <div class="img">
-                <img
-                  src="images/Side_Image-removebg-preview.png"
-                  alt=""
-                  class="slider-image"
-                />
-              </div>
-            </div>
+            <a href="products.html"><img src="images/Boat banner.png" class="d-block w-100" alt="..."></a>
           </div>
 
           <!--Carousel Item 3-->
           <div class="carousel-item">
-            <div class="slider">
-              <div class="slider-text">
-                <div class="iphone">
-                  <img src="images/Apple-logo.png" alt="" class="iphone-logo" />
-                  <p class="iphone-text">iPhone 14 Series</p>
-                </div>
-                <p>Up to 10% off Voucher</p>
-                <button>Shop Now</button>
-              </div>
-
-              <div class="img">
-                <img
-                  src="images/JBL_Speaker-removebg-preview.png"
-                  alt=""
-                  class="slider-image"
-                />
-              </div>
-            </div>
+              <a href="products.html"><img src="images/Redmi.png" class="d-block w-100" alt="..."></a>
           </div>
         </div>
         <button
@@ -398,10 +358,10 @@
 
 <section class="video-section">
   <div class="video-container">
-    <video src="images/iPhone 16 Reveal (4K).mp4" autoplay loop muted></video>
+    <video src="images/T3 Smartwatch Advertising Video.mp4" autoplay loop muted></video>
     <div class="video-text">
       <p>Get Amazing Deals and offers on new launches! Experience the future. </p>
-      <p style="text-decoration: underline; font-weight: 500; font-size: 30px; cursor: pointer;">SHOP NOW</p>
+      <a href="products.html"><p>SHOP NOW</p></a>
     </div>
   </div>
 </section>
@@ -793,6 +753,29 @@
         <p>We return money within 30 days</p>
       </div>
     </div>
+
+
+    <div style="height:100px"></div>
+  <!-- Chat Toggle (Hidden Checkbox) -->
+  <input type="checkbox" id="chat-toggle" hidden>
+
+  <!-- Chat Icon -->
+  <label for="chat-toggle" class="chat-icon">💬</label>
+
+  <!-- Chat Box -->
+  <div class="chat-box">
+    <div class="chat-header">
+      Assistant
+      <label for="chat-toggle" class="close-btn">×</label>
+    </div>
+    <div class="chat-body">
+      <p>Hello! How can I help you today?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message..." />
+      <button type="button" class="send-btn">➤</button>
+    </div>
+  </div>
 
     <!--Footer-->
 
