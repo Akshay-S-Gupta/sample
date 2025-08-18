@@ -1,46 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart Page</title>
-    <link rel="stylesheet" href="css/cart.css" />
-    <!-- Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="css/cart.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/Favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/Favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/Favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/Favicon/site.webmanifest" />
-  </head>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-  <body>
+</head>
+
+<body>
+
+
+  <!-- Spacer -->
     <!--Header-->
     <div class="header">
       <div class="container-fluid top-header">
@@ -50,34 +30,13 @@
             <span class="top-heading-span">Shop Now!</span>
           </p>
         </div>
-        <!-- Middle: Nav links -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-secondary" type="submit">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-          </form>
-        </div>
-        <!-- Right section: Icons -->
-        <!-- Right section: Icons -->
-        <div class="nav-icons">
-          <a href="wishlist.html" class="nav-icon">
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-          </a>
-          <span class="nav-icon">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          </span>
+
+        <div class="dropdown-container">
+          <select name="language" id="language" class="dropdown">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Marathi">Marathi</option>
+          </select>
         </div>
       </div>
 
@@ -148,7 +107,34 @@
             </span>
           </div>
         </div>
+      </nav>
+    </div>
+    <!--Header Ends-->
 
+  <div style="height: 40px;"></div>
+  
+  <main class="cart-container">
+    <p class="breadcrumb">
+      <a href="index.html">Home</a> /
+      <a href="cart.html">Cart</a>
+    </p>
+
+    <!-- section -->
+    <section class="cart-table">
+      <!-- Table header -->
+      <div class="cart-header-row">
+        <div>Product</div>
+        <div>Price</div>
+        <div>Quantity</div>
+        <div>Subtotal</div>
+      </div>
+
+      <!-- Cart Item 1 -->
+      <div class="cart-item-row">
+        <div class="product-info">
+          <img src="images/img/smart watch.png" alt="Smartwatch" />
+          <span>D20 pro Smartwatch</span>
+        </div>
         <div class="price">$650</div>
         <div class="quantity">
           <div class="counter">
@@ -156,8 +142,10 @@
             <input type="number" value="1" min="1">
 
           </div>
-
         </div>
+        <div class="subtotal">$650</div>
+      </div>
+
       <!-- Cart Item 2 -->
       <div class="cart-item-row">
         <div class="product-info">
@@ -169,84 +157,68 @@
           <div class="counter">
             <input type="number" value="2" min="1">
           </div>
+        </div>
+        <div class="subtotal">$1100</div>
+      </div>
 
+      <!-- Buttons (unchanged) -->
+      <section class="cart-bottom">
+        <div class="left-actions">
+          <a href="products.html" class="return-btn">Return to Shop</a>
+          <div class="coupon">
+            <input type="text" placeholder="Coupon Code">
+            <button>Apply Coupon</button>
+          </div>
         </div>
 
-        <!-- Cart Item 2 -->
-        <div class="cart-item-row">
-          <div class="product-info">
-            <img src="images/img/headphone.png" alt="Headphone" />
-            <span>Noise headphone</span>
+        <div class="right-section">
+          <button class="update-btn">Update Cart</button>
+          <div class="cart-total">
+            <h3>Cart Total</h3>
+            <div class="total-row">
+              <span>Subtotal</span>
+              <span>$1750</span>
+            </div>
+            <div class="total-row">
+              <span>Shipping</span>
+              <span>Free</span>
+            </div>
+            <div class="total-row total">
+              <span>Total</span>
+              <span>$1750</span>
+            </div>
+            <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
           </div>
-          <div class="price">$550</div>
-          <div class="quantity">
-            <select>
-              <option>01</option>
-              <option selected>02</option>
-              <option>03</option>
-            </select>
-          </div>
-          <div class="subtotal">$1100</div>
         </div>
-
-        <!-- Buttons (unchanged) -->
-        <section class="cart-bottom">
-          <div class="left-actions">
-            <a href="products.html" class="return-btn">Return to Shop</a>
-            <div class="coupon">
-              <input type="text" placeholder="Coupon Code" />
-              <button>Apply Coupon</button>
-            </div>
-          </div>
-
-          <div class="right-section">
-            <button class="update-btn">Update Cart</button>
-            <div class="cart-total">
-              <h3>Cart Total</h3>
-              <div class="total-row">
-                <span>Subtotal</span>
-                <span>$1750</span>
-              </div>
-              <div class="total-row">
-                <span>Shipping</span>
-                <span>Free</span>
-              </div>
-              <div class="total-row total">
-                <span>Total</span>
-                <span>$1750</span>
-              </div>
-              <a href="checkout.html" class="checkout-btn"
-                >Proceed to Checkout</a
-              >
-            </div>
-          </div>
-        </section>
       </section>
-    </main>
 
-    <div style="height: 50px"></div>
+  </main>
 
-    <!-- Chat Toggle (Hidden Checkbox) -->
-    <input type="checkbox" id="chat-toggle" hidden />
 
-    <!-- Chat Icon -->
-    <label for="chat-toggle" class="chat-icon">💬</label>
+  <div style="height: 50px;"></div>
 
-    <!-- Chat Box -->
-    <div class="chat-box">
-      <div class="chat-header">
-        Assistant
-        <label for="chat-toggle" class="close-btn">×</label>
-      </div>
-      <div class="chat-body">
-        <p>Hello! How can I help you today?</p>
-      </div>
-      <div class="chat-input">
-        <input type="text" placeholder="Type a message..." />
-        <button type="button" class="send-btn">➤</button>
-      </div>
+  <!-- Chat Toggle (Hidden Checkbox) -->
+  <input type="checkbox" id="chat-toggle" hidden>
+
+  <!-- Chat Icon -->
+  <label for="chat-toggle" class="chat-icon">💬</label>
+
+  <!-- Chat Box -->
+  <div class="chat-box">
+    <div class="chat-header">
+      Assistant
+      <label for="chat-toggle" class="close-btn">×</label>
     </div>
+    <div class="chat-body">
+      <p>Hello! How can I help you today?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message..." />
+      <button type="button" class="send-btn">➤</button>
+    </div>
+  </div>
 
+  <!-- footer -->
     <!--Footer-->
     <footer class="footer">
       <div class="footer-container">
@@ -310,6 +282,6 @@
         <p>© Copyright 2025. All right reserved</p>
       </div>
     </footer>
-    <!-- footer ends -->
-  </body>
+</body>
+
 </html>
