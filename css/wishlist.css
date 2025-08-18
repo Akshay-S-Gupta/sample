@@ -580,7 +580,7 @@
 }
 
 .fa-heart {
-  color: black;
+  color: red;
 }
 /* chat box starts */
 /* Chat Icon */
@@ -715,7 +715,7 @@ main {
 
 
 .heart-toggle .heart-input:checked ~ i.fa-heart-o { display: none !important; }
-.heart-toggle .heart-input:checked ~ i.fa-heart   { display: inline-block !important; color: black !important; }
+.heart-toggle .heart-input:checked ~ i.fa-heart   { display: inline-block !important; color: red !important; }
 
 
 /* Special Offer Banner Styling */
