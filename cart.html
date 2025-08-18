@@ -50,13 +50,34 @@
             <span class="top-heading-span">Shop Now!</span>
           </p>
         </div>
-
-        <div class="dropdown-container">
-          <select name="language" id="language" class="dropdown">
-            <option value="English">English</option>
-            <option value="Hindi">Hindi</option>
-            <option value="Marathi">Marathi</option>
-          </select>
+        <!-- Middle: Nav links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-secondary" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <!-- Right section: Icons -->
+        <!-- Right section: Icons -->
+        <div class="nav-icons">
+          <a href="wishlist.html" class="nav-icon">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </a>
+          <span class="nav-icon">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </span>
         </div>
       </div>
 
@@ -127,42 +148,28 @@
             </span>
           </div>
         </div>
-      </nav>
-    </div>
-    <!--Header Ends-->
-    <div style="height: 40px"></div>
 
-    <main class="cart-container">
-      <p class="breadcrumb">
-        <a href="index.html">Home</a> /
-        <a href="cart.html">Cart</a>
-      </p>
+        <div class="price">$650</div>
+        <div class="quantity">
+          <div class="counter">
 
-      <!-- section -->
-      <section class="cart-table">
-        <!-- Table header -->
-        <div class="cart-header-row">
-          <div>Product</div>
-          <div>Price</div>
-          <div>Quantity</div>
-          <div>Subtotal</div>
+            <input type="number" value="1" min="1">
+
+          </div>
+
         </div>
+      <!-- Cart Item 2 -->
+      <div class="cart-item-row">
+        <div class="product-info">
+          <img src="images/img/headphone.png" alt="Headphone" />
+          <span>Noise headphone</span>
+        </div>
+        <div class="price">$550</div>
+        <div class="quantity">
+          <div class="counter">
+            <input type="number" value="2" min="1">
+          </div>
 
-        <!-- Cart Item 1 -->
-        <div class="cart-item-row">
-          <div class="product-info">
-            <img src="images/img/smart watch.png" alt="Smartwatch" />
-            <span>D20 pro Smartwatch</span>
-          </div>
-          <div class="price">$650</div>
-          <div class="quantity">
-            <select>
-              <option selected>01</option>
-              <option>02</option>
-              <option>03</option>
-            </select>
-          </div>
-          <div class="subtotal">$650</div>
         </div>
 
         <!-- Cart Item 2 -->
