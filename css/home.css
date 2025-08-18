@@ -1,32 +1,16 @@
 /*Hero Section*/
 
 .hero{
-    text-align: center;
     overflow: hidden;
-    width: 100%;
-    display: flex;
+    margin: 0 40px;
 }
 
-.category{
-    padding: 20px;
-    border-right: 1px solid #efefee;
-    width: 400px;
-}
 
-.category ul li{
-    list-style: none;
-    font-size:15px ;
-    font-weight: 500;
-    text-align: left;
-    padding: 10px;
-    border-bottom:1px solid #efefee ;
-    padding-left: 20px;
-}
 
 /*Carousel*/
 .carousel{
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
   max-height: auto;
 }
 
@@ -35,11 +19,11 @@
 /*Flash Sale*/
 .flash-sales {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-family: Arial, sans-serif;
     padding: 30px;
-    margin-top: 36px;
-    margin-left: 50px;
+    margin:  0 50px;
     gap: 30px;
 }
 
@@ -262,7 +246,7 @@
   display: inline-block;
   background-color: #db4444;
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   padding: 4px 8px;
   border-radius: 4px;
   font-weight: bold;
@@ -270,7 +254,7 @@
 }
 
 .section-header h2 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   margin: 10px 0;
 }
@@ -455,7 +439,6 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
     font-family: Arial, sans-serif;
     padding: 30px;
     margin-top: 36px;
-    margin-left: 24px;
     gap: 10px;
     
 }
@@ -551,7 +534,7 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
   font-weight: bold;
 }
 .featured-title {
-  font-size:28px;
+  font-size:30px;
   font-weight: bolder;
   margin: 0;
 }
@@ -737,20 +720,19 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
 
 
 .card-container {
-      display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
-        max-width: 900px;
-        margin: 50px auto;
-        text-align: center;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    justify-content: center;
+}
 
     .support {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 250px;
-        margin-top: 30px;
         width: 250px;
         margin-top: 30px;
     }
@@ -772,8 +754,13 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
         background-color: black;
         color: white;
         border-radius: 50%;
-        padding: 15px;
-        font-size: 20px;
+        padding: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-wrapper-inner i{
+        font-size: 50px;
     }
 
    .support h3 {
@@ -929,6 +916,7 @@ main {
     align-items: center;
     text-align: center;
     display: flex;
+    flex-direction: column;
     margin: 50px;
    }
 
@@ -946,7 +934,7 @@ main {
    }
 
    .flash-title {
-    font-size: 20px;
+    font-size: 30px;
    }
 
    .more{
@@ -954,13 +942,18 @@ main {
     font-size: 20px;
    }
 
+   .hero{
+    padding: 0;
+    margin: 0;
+   }
+
    .video-text{
     left: 0;
-    margin: 10px;
+    margin: 12px;
    }
 
    .video-text p{
-    font-size: 15px;
+    font-size: 12px;
    }
 
   .container-m {
