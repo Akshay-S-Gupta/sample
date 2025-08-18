@@ -502,9 +502,7 @@ body {
 .product-card .product-info .price {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
-  margin-bottom: 10px;
 }
 @media (max-width: 576px) {
   .product-card .product-info .price {
@@ -531,16 +529,12 @@ body {
     font-size: 12px;
   }
 }
-.product-card .product-info .rating {
-  text-align: center;
-}
-.product-card .product-info .rating .stars {
+.product-card .product-info .rating .stars-products {
   color: #ffd700;
   font-size: 14px;
-  margin-right: 5px;
 }
 @media (max-width: 576px) {
-  .product-card .product-info .rating .stars {
+  .product-card .product-info .rating .stars-products {
     font-size: 12px;
   }
 }

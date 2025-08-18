@@ -673,70 +673,71 @@ button.buy-btn:hover { transform: scale(1.1) !important; }
    
 }
 
-.overlay-text-img {
+.overlay-text-img , .overlay-text-img-right{
     position: absolute;
     bottom: 0; 
     left: 0;
     width: 100%;
     padding: 15px;
     background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-    color: white;
-   
-    
-    
-   
-    
-    
+    color: white;    
 }
 
 .overlay-text-img h5 {
     color: white;  
-    font-size: 17px;
+    font-size: 30px;
     margin-left: 14px;
     position: relative;
-    bottom: -10px;
+    bottom: 46px;
    
 }
-.overlay-text-img p{
-    position: relative;
-    bottom: -10px;
-   
-}
+
 .overlay-text-img p{
     color: white;
-    
-    font-size: 11px;
+    font-size: 20px;
     margin-left: 14px;
-   
-   
-    
-    font-size: 11px;
-    margin-left: 14px;
-   
-   
+    position: relative;
+    bottom: 50px; 
 }
+
 .overlay-text-img a {
     color: white;
     text-decoration: underline;
-    
-    font-size: 8px;
+    font-size: 16px;
     margin-left: 14px;
     position: relative;
-    top: -31px;
+    bottom: 70px;
+}
+
+.overlay-text-img-right h5 {
+    color: white;  
+    font-size: 20px;
     margin-left: 14px;
     position: relative;
-    top: -31px;
+    bottom: 0;
    
 }
 
+.overlay-text-img-right p{
+    color: white;
+    font-size: 18px;
+    margin-left: 14px;
+    position: relative;
+    bottom: 7px; 
+}
+
+.overlay-text-img-right a {
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-left: 14px;
+    position: relative;
+    bottom: 25px;
+}
 
 
-
-   
-  
-   
-    .card-container {
-        display: grid;
+.card-container {
+      display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
         max-width: 900px;
