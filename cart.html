@@ -12,12 +12,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
- <link
+    <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="images/Favicon/apple-touch-icon.png"
@@ -35,7 +38,6 @@
       href="images/Favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="images/Favicon/site.webmanifest" />
-
   </head>
 
   <body>
@@ -138,15 +140,15 @@
         <a href="cart.html">Cart</a>
       </p>
 
-    <!-- section -->
-    <section class="cart-table">
-      <!-- Table header -->
-      <div class="cart-header-row">
-        <div>Product</div>
-        <div>Price</div>
-        <div>Quantity</div>
-        <div>Subtotal</div>
-      </div>
+      <!-- section -->
+      <section class="cart-table">
+        <!-- Table header -->
+        <div class="cart-header-row">
+          <div>Product</div>
+          <div>Price</div>
+          <div>Quantity</div>
+          <div>Subtotal</div>
+        </div>
 
         <!-- Cart Item 1 -->
         <div class="cart-item-row">
@@ -162,7 +164,6 @@
           </div>
         </div>
         <div class="subtotal">$650</div>
-      </div>
 
         <!-- Cart Item 2 -->
         <div class="cart-item-row">
@@ -178,64 +179,64 @@
           </div>
         </div>
         <div class="subtotal">$1100</div>
-      </div>
 
-      <!-- Buttons (unchanged) -->
-      <section class="cart-bottom">
-        <div class="left-actions">
-          <a href="products.html" class="return-btn">Return to Shop</a>
-          <div class="coupon">
-            <input type="text" placeholder="Coupon Code">
-            <button>Apply Coupon</button>
+        <!-- Buttons (unchanged) -->
+        <section class="cart-bottom">
+          <div class="left-actions">
+            <a href="products.html" class="return-btn">Return to Shop</a>
+            <div class="coupon">
+              <input type="text" placeholder="Coupon Code" />
+              <button>Apply Coupon</button>
+            </div>
           </div>
-        </div>
 
-        <div class="right-section">
-          <button class="update-btn">Update Cart</button>
-          <div class="cart-total">
-            <h3>Cart Total</h3>
-            <div class="total-row">
-              <span>Subtotal</span>
-              <span>$1750</span>
+          <div class="right-section">
+            <button class="update-btn">Update Cart</button>
+            <div class="cart-total">
+              <h3>Cart Total</h3>
+              <div class="total-row">
+                <span>Subtotal</span>
+                <span>$1750</span>
+              </div>
+              <div class="total-row">
+                <span>Shipping</span>
+                <span>Free</span>
+              </div>
+              <div class="total-row total">
+                <span>Total</span>
+                <span>$1750</span>
+              </div>
+              <a href="checkout.html" class="checkout-btn"
+                >Proceed to Checkout</a
+              >
             </div>
-            <div class="total-row">
-              <span>Shipping</span>
-              <span>Free</span>
-            </div>
-            <div class="total-row total">
-              <span>Total</span>
-              <span>$1750</span>
-            </div>
-            <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
           </div>
-        </div>
+        </section>
       </section>
-    </section>
-  </main>
+    </main>
 
+    <div style="height: 50px"></div>
 
-  <div style="height: 50px;"></div>
+    <!-- Chat Toggle (Hidden Checkbox) -->
+    <input type="checkbox" id="chat-toggle" hidden />
 
-  <!-- Chat Toggle (Hidden Checkbox) -->
-  <input type="checkbox" id="chat-toggle" hidden>
+    <!-- Chat Icon -->
+    <label for="chat-toggle" class="chat-icon">💬</label>
 
-  <!-- Chat Icon -->
-  <label for="chat-toggle" class="chat-icon">💬</label>
-
-  <!-- Chat Box -->
-  <div class="chat-box">
-    <div class="chat-header">
-      Assistant
-      <label for="chat-toggle" class="close-btn">×</label>
+    <!-- Chat Box -->
+    <div class="chat-box">
+      <div class="chat-header">
+        Assistant
+        <label for="chat-toggle" class="close-btn">×</label>
+      </div>
+      <div class="chat-body">
+        <p>Hello! How can I help you today?</p>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type a message..." />
+        <button type="button" class="send-btn">➤</button>
+      </div>
     </div>
-    <div class="chat-body">
-      <p>Hello! How can I help you today?</p>
-    </div>
-    <div class="chat-input">
-      <input type="text" placeholder="Type a message..." />
-      <button type="button" class="send-btn">➤</button>
-    </div>
-  </div>
 
     <!--Footer-->
     <footer class="footer">
