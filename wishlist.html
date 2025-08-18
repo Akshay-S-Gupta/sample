@@ -1,525 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Wishlist</title>
 
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Wishlist</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/Favicon/site.webmanifest" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/Favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/Favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/Favicon/site.webmanifest">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
+    <!-- Bootstrap CSS (match version) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap CSS (match version) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/wishlist.css" />
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/wishlist.css">
-</head>
-
-<body>
-  <div class="header">
-    <div class="container-fluid top-header">
-      <div class="top-heading">
-        <p class="p">Summer Sale For All Back To All Back To Home Items OFF 50% <span class="top-heading-span">Shop
-            Now!</span></p>
-      </div>
-
-      <div class="dropdown-container">
-        <select name="language" id="language" class="dropdown">
-          <option value="English">English</option>
-          <option value="Hindi">Hindi</option>
-          <option value="Marathi">Marathi</option>
-        </select>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid nav-container d-flex align-items-center justify-content-between">
-        <!-- Left section: Toggle + Logo -->
-        <div class="d-flex align-items-center">
-          <!-- Toggle button (mobile only) -->
-          <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">Exclusive</a>
+  <body>
+    <!--Header-->
+    <div class="header">
+      <div class="container-fluid top-header">
+        <div class="top-heading">
+          <p class="p">
+            Summer Sale For All Back To All Back To Home Items OFF 50%
+            <span class="top-heading-span">Shop Now!</span>
+          </p>
         </div>
 
-        <!-- Middle: Nav links -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-secondary" type="submit">
-              <i class="fa fa-search" aria-hidden="true"></i>
+        <div class="dropdown-container">
+          <select name="language" id="language" class="dropdown">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Marathi">Marathi</option>
+          </select>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg">
+        <div
+          class="container-fluid nav-container d-flex align-items-center justify-content-between"
+        >
+          <!-- Left section: Toggle + Logo -->
+          <div class="d-flex align-items-center">
+            <!-- Toggle button (mobile only) -->
+            <button
+              class="navbar-toggler me-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
             </button>
-          </form>
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Exclusive</a>
+          </div>
+
+          <!-- Middle: Nav links -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right section: Icons -->
+          <div class="nav-icons">
+            <span class="nav-icon">
+              <a href="wishlist.html"
+                ><i class="fa fa-heart-o" aria-hidden="true"></i
+              ></a>
+            </span>
+            <span class="nav-icon">
+              <a href="cart.html"
+                ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+              ></a>
+            </span>
+          </div>
         </div>
-
-        <!-- Right section: Icons -->
-        <!-- Right section: Icons -->
-        <div class="nav-icons">
-          <a href="#" class="nav-icon" title="Wishlist">
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-          </a>
-          <a href="cart.html" class="nav-icon" title="Cart">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          </a>
-        </div>
-
-      </div>
-    </nav>
-  </div>
-
-
-
-  <div style="height:100px"></div>
-
-
-
-  <main class="site">
-
-
-    <div class="d-flex align-items-center justify-content-between wishlist-header mb-3">
-      <h2 class="wishlist-title">Wishlist(4)</h2>
-      <button class="btn-move-all">Move All to Bag</button>
+      </nav>
     </div>
+    <!--Header Ends-->
 
-
-    <div class="row g-4">
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-badge">-40%</span>
-            <img src="images/img/slider-img.png" alt="Zenko Tablet" />
-            <div class="icons">
-              <span class="icon"><i class="fa fa-heart"></i></span>
-              <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h4 class="product-title">Zenko Tablet</h4>
-            <div class="price">
-              <span class="new-price">$1500</span>
-              <span class="old-price">$960</span>
-            </div>
-            <div class="rating">
-              <span class="stars">⭐⭐⭐⭐⭐</span>
-              <span class="reviews">(88)</span>
-            </div>
-          </div>
-        </div>
-
-
-
+    <div style="height: 100px"></div>
+    <main class="site">
+      <div
+        class="d-flex align-items-center justify-content-between wishlist-header mb-3"
+      >
+        <h2 class="wishlist-title">Wishlist(4)</h2>
+        <button class="btn-move-all">Move All to Bag</button>
       </div>
 
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-badge">-30%</span>
-            <img src="images/img/Mobile Phone.png" alt="Vivo x50 pro 5g" />
-            <div class="icons">
-              <span class="icon"><i class="fa fa-heart"></i></span>
-              <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h4 class="product-title">Vivo x50 pro 5g</h4>
-            <div class="price">
-              <span class="new-price">$250</span>
-              <span class="old-price">$160</span>
-            </div>
-            <div class="rating">
-              <span class="stars">⭐⭐⭐⭐</span>
-              <span class="reviews">(90)</span>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-badge">-25%</span>
-            <img src="images/ps5-slim-goedkope-playstation_large 1.png" alt="PS5" />
-            <div class="icons">
-              <span class="icon"><i class="fa fa-heart"></i></span>
-              <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h4 class="product-title">PS5 Slim</h4>
-            <div class="price">
-              <span class="new-price">$19000</span>
-              <span class="old-price">$16000</span>
-            </div>
-            <div class="rating">
-              <span class="stars">⭐⭐⭐⭐⭐</span>
-              <span class="reviews">(1.2K)</span>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-badge">-40%</span>
-            <img src="images/HAVIT HV-G92 Gamepad.png" alt="HAVIT HV-G92 Gamepad" />
-            <div class="icons">
-              <span class="icon"><i class="fa fa-heart"></i></span>
-              <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h4 class="product-title">HAVIT HV-G92 Gamepad</h4>
-            <div class="price">
-              <span class="new-price">$120</span>
-              <span class="old-price">$160</span>
-            </div>
-            <div class="rating">
-              <span class="stars">⭐⭐⭐⭐⭐</span>
-              <span class="reviews">(88)</span>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-
-    <div style="height:80px"></div>
-
-
-    <div class="d-flex align-items-center justify-content-between wishlist-header mb-3">
-      <h2 class="just-for-you-title">Just for you</h2>
-      <button class="btn-move-all">See all</button>
-    </div>
-
-
-    <div class="row g-4">
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-badge">-35%</span>
-            <img src="images/AK-900 Wired Keyboard.png" alt="HAVIT HV-G92 Gamepad" />
-            <div class="icons">
-              <label class="icon heart-toggle" aria-label="Toggle wishlist">
-                <input type="checkbox" class="heart-input">
-                <i class="fa fa-heart-o"></i>
-                <i class="fa fa-heart"></i>
-              </label>
-
-              <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h4 class="product-title">AK-900 Wired Keyboard</h4>
-            <div class="price">
-              <span class="new-price">$960</span>
-              <span class="old-price">$1100</span>
-            </div>
-            <div class="rating">
-              <span class="stars">⭐⭐⭐⭐⭐</span>
-              <span class="reviews">(75)</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-badge">-15%</span>
-            <img src="images/JBL_Speaker-removebg-preview.png" alt="iPad" />
-            <div class="icons">
-              <label class="icon heart-toggle" aria-label="Toggle wishlist">
-                <input type="checkbox" class="heart-input">
-                <i class="fa fa-heart-o"></i>
-                <i class="fa fa-heart"></i>
-              </label>
-
-              <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h4 class="product-title">JBL speaker</h4>
-            <div class="price">
-              <span class="new-price">$1200</span>
-              <span class="old-price">$990</span>
-            </div>
-            <div class="rating">
-              <span class="stars">⭐⭐⭐⭐</span>
-              <span class="reviews">(80)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-badge">-25%</span>
-            <img src="images/img/headphone.png" alt="HAVIT HV-G92 Gamepad" />
-            <div class="icons">
-              <label class="icon heart-toggle" aria-label="Toggle wishlist">
-                <input type="checkbox" class="heart-input">
-                <i class="fa fa-heart-o"></i>
-                <i class="fa fa-heart"></i>
-              </label>
-
-              <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h4 class="product-title">Noise Headphone</h4>
-            <div class="price">
-              <span class="new-price">$550</span>
-              <span class="old-price">$450</span>
-            </div>
-            <div class="rating">
-              <span class="stars">⭐⭐⭐⭐⭐</span>
-              <span class="reviews">(670)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-badge">-15%</span>
-            <img src="images/img/smart watch.png" alt="HAVIT HV-G92 Gamepad" />
-            <div class="icons">
-              <label class="icon heart-toggle" aria-label="Toggle wishlist">
-                <input type="checkbox" class="heart-input">
-                <i class="fa fa-heart-o"></i>
-                <i class="fa fa-heart"></i>
-              </label>
-
-              <span class="icon"><i class="fa fa-shopping-cart"></i></span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h4 class="product-title">D20 pro smartwatch</h4>
-            <div class="price">
-              <span class="new-price">$880</span>
-              <span class="old-price">$750</span>
-            </div>
-            <div class="rating">
-              <span class="stars">⭐⭐⭐⭐</span>
-              <span class="reviews">(25)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  </main>
-
-
-  <div style="height:50px"></div>
-  <!-- Chat Toggle (Hidden Checkbox) -->
-  <input type="checkbox" id="chat-toggle" hidden>
-
-  <!-- Chat Icon -->
-  <label for="chat-toggle" class="chat-icon">💬</label>
-
-  <!-- Chat Box -->
-  <div class="chat-box">
-    <div class="chat-header">
-      Assistant
-      <label for="chat-toggle" class="close-btn">×</label>
-    </div>
-    <div class="chat-body">
-      <p>Hello! How can I help you today?</p>
-    </div>
-    <div class="chat-input">
-      <input type="text" placeholder="Type a message..." />
-      <button type="button" class="send-btn">➤</button>
-    </div>
-  </div>
-
-
-  <!-- Special Offer Banner -->
-  <div class="container my-5">
-    <div class="p-4 rounded-3 text-white text-center special-offer-banner">
-      <h2 class="mb-2">🎉 Special Offer Just For You!</h2>
-      <p class="mb-3">Get up to <strong>50% OFF</strong> on selected items. Limited time only!</p>
-      <a href="products.html" class="btn btn-light btn-lg fw-bold">Shop Now</a>
-    </div>
-  </div>
-
-  <!-- Highly Reordered Section -->
-  <div class="container my-5">
-    <h2 class="text-center mb-4">🔄 Highly Reordered</h2>
-    <div id="reorderedCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-
-
-      <div class="carousel-inner">
-
-        <!-- First Slide -->
-        <div class="carousel-item active">
-          <div class="row g-4 justify-content-center">
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="product-card text-center">
-                <img src="images/img/slider-img.png" class="d-block w-100" alt="Tablet">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge">-40%</span>
+              <img src="images/img/slider-img.png" alt="Zenko Tablet" />
+              <div class="icons">
+                <span class="icon"><i class="fa fa-heart"></i></span>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="product-card text-center">
-                <img src="images/swatch.png" class="d-block w-100" alt="Mobile">
+            <div class="product-info">
+              <h4 class="product-title">Zenko Tablet</h4>
+              <div class="price">
+                <span class="new-price">$1500</span>
+                <span class="old-price">$960</span>
               </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="product-card text-center">
-                <img src="images/boat.png" class="d-block w-100" alt="Mobile">
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="product-card text-center">
-                <img src="images/Speaker.png" class="d-block w-100" alt="Mobile">
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">(88)</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Second Slide -->
-        <div class="carousel-item">
-          <div class="row g-4 justify-content-center">
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="product-card text-center">
-                <img src="images/ps5-slim-goedkope-playstation_large 1.png" class="d-block w-100" alt="PS5">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge">-30%</span>
+              <img src="images/img/Mobile Phone.png" alt="Vivo x50 pro 5g" />
+              <div class="icons">
+                <span class="icon"><i class="fa fa-heart"></i></span>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="product-card text-center">
-                <img src="images/HAVIT HV-G92 Gamepad.png" class="d-block w-100" alt="Gamepad">
+            <div class="product-info">
+              <h4 class="product-title">Vivo x50 pro 5g</h4>
+              <div class="price">
+                <span class="new-price">$250</span>
+                <span class="old-price">$160</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐</span>
+                <span class="reviews">(90)</span>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
-            <div class="product-card text-center">
-              <img src="images/flip.png" class="d-block w-100" alt="Mobile">
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge">-25%</span>
+              <img
+                src="images/ps5-slim-goedkope-playstation_large 1.png"
+                alt="PS5"
+              />
+              <div class="icons">
+                <span class="icon"><i class="fa fa-heart"></i></span>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
             </div>
-            
+            <div class="product-info">
+              <h4 class="product-title">PS5 Slim</h4>
+              <div class="price">
+                <span class="new-price">$19000</span>
+                <span class="old-price">$16000</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">(1.2K)</span>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge">-40%</span>
+              <img
+                src="images/HAVIT HV-G92 Gamepad.png"
+                alt="HAVIT HV-G92 Gamepad"
+              />
+              <div class="icons">
+                <span class="icon"><i class="fa fa-heart"></i></span>
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4 class="product-title">HAVIT HV-G92 Gamepad</h4>
+              <div class="price">
+                <span class="new-price">$120</span>
+                <span class="old-price">$160</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">(88)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 80px"></div>
+
+      <div
+        class="d-flex align-items-center justify-content-between wishlist-header mb-3"
+      >
+        <h2 class="just-for-you-title">Just for you</h2>
+        <button class="btn-move-all">See all</button>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge">-35%</span>
+              <img
+                src="images/AK-900 Wired Keyboard.png"
+                alt="HAVIT HV-G92 Gamepad"
+              />
+              <div class="icons">
+                <label class="icon heart-toggle" aria-label="Toggle wishlist">
+                  <input type="checkbox" class="heart-input" />
+                  <i class="fa fa-heart-o"></i>
+                  <i class="fa fa-heart"></i>
+                </label>
+
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4 class="product-title">AK-900 Wired Keyboard</h4>
+              <div class="price">
+                <span class="new-price">$960</span>
+                <span class="old-price">$1100</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">(75)</span>
+              </div>
+            </div>
           </div>
         </div>
 
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge">-15%</span>
+              <img src="images/JBL_Speaker-removebg-preview.png" alt="iPad" />
+              <div class="icons">
+                <label class="icon heart-toggle" aria-label="Toggle wishlist">
+                  <input type="checkbox" class="heart-input" />
+                  <i class="fa fa-heart-o"></i>
+                  <i class="fa fa-heart"></i>
+                </label>
+
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4 class="product-title">JBL speaker</h4>
+              <div class="price">
+                <span class="new-price">$1200</span>
+                <span class="old-price">$990</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐</span>
+                <span class="reviews">(80)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge">-25%</span>
+              <img src="images/img/headphone.png" alt="HAVIT HV-G92 Gamepad" />
+              <div class="icons">
+                <label class="icon heart-toggle" aria-label="Toggle wishlist">
+                  <input type="checkbox" class="heart-input" />
+                  <i class="fa fa-heart-o"></i>
+                  <i class="fa fa-heart"></i>
+                </label>
+
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4 class="product-title">Noise Headphone</h4>
+              <div class="price">
+                <span class="new-price">$550</span>
+                <span class="old-price">$450</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">(670)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge">-15%</span>
+              <img
+                src="images/img/smart watch.png"
+                alt="HAVIT HV-G92 Gamepad"
+              />
+              <div class="icons">
+                <label class="icon heart-toggle" aria-label="Toggle wishlist">
+                  <input type="checkbox" class="heart-input" />
+                  <i class="fa fa-heart-o"></i>
+                  <i class="fa fa-heart"></i>
+                </label>
+
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4 class="product-title">D20 pro smartwatch</h4>
+              <div class="price">
+                <span class="new-price">$880</span>
+                <span class="old-price">$750</span>
+              </div>
+              <div class="rating">
+                <span class="stars">⭐⭐⭐⭐</span>
+                <span class="reviews">(25)</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </main>
 
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#reorderedCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#reorderedCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+    <div style="height: 50px"></div>
+    <!-- Chat Toggle (Hidden Checkbox) -->
+    <input type="checkbox" id="chat-toggle" hidden />
+
+    <!-- Chat Icon -->
+    <label for="chat-toggle" class="chat-icon">💬</label>
+
+    <!-- Chat Box -->
+    <div class="chat-box">
+      <div class="chat-header">
+        Assistant
+        <label for="chat-toggle" class="close-btn">×</label>
+      </div>
+      <div class="chat-body">
+        <p>Hello! How can I help you today?</p>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type a message..." />
+        <button type="button" class="send-btn">➤</button>
+      </div>
     </div>
-  </div>
 
+    <!-- Special Offer Banner -->
+    <div class="container my-5">
+      <div class="p-4 rounded-3 text-white text-center special-offer-banner">
+        <h2 class="mb-2">🎉 Special Offer Just For You!</h2>
+        <p class="mb-3">
+          Get up to <strong>50% OFF</strong> on selected items. Limited time
+          only!
+        </p>
+        <a href="products.html" class="btn btn-light btn-lg fw-bold"
+          >Shop Now</a
+        >
+      </div>
+    </div>
 
-  <!-- footer -->
-  <footer class="footer">
-    <div class="footer-container">
+    <!-- Highly Reordered Section -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4">🔄 Highly Reordered</h2>
+      <div
+        id="reorderedCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="2000"
+      >
+        <div class="carousel-inner">
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="product-card text-center">
+                  <img
+                    src="images/img/slider-img.png"
+                    class="d-block w-100"
+                    alt="Tablet"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="product-card text-center">
+                  <img
+                    src="images/swatch.png"
+                    class="d-block w-100"
+                    alt="Mobile"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="product-card text-center">
+                  <img
+                    src="images/boat.png"
+                    class="d-block w-100"
+                    alt="Mobile"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="product-card text-center">
+                  <img
+                    src="images/Speaker.png"
+                    class="d-block w-100"
+                    alt="Mobile"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Column 1 -->
-      <div class="footer-column">
-        <h3>Exclusive</h3>
-        <p class="footer-title">Subscribe</p>
-        <p>Get 10% off your first order</p>
-        <div class="subscribe-box">
-          <input type="email" placeholder="Enter your email">
-          <button><i class="fa fa-paper-plane"></i></button>
+          <!-- Second Slide -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="product-card text-center">
+                  <img
+                    src="images/ps5-slim-goedkope-playstation_large 1.png"
+                    class="d-block w-100"
+                    alt="PS5"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="product-card text-center">
+                  <img
+                    src="images/HAVIT HV-G92 Gamepad.png"
+                    class="d-block w-100"
+                    alt="Gamepad"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="product-card text-center">
+                  <img
+                    src="images/flip.png"
+                    class="d-block w-100"
+                    alt="Mobile"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#reorderedCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#reorderedCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-column">
+          <h3>Exclusive</h3>
+          <p class="footer-title">Subscribe</p>
+          <p>Get 10% off your first order</p>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Enter your email" />
+            <button><i class="fa fa-paper-plane"></i></button>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+          <h4>Support</h4>
+          <p>111 Bijoy sarani, Dhaka, DH 1515, India.</p>
+          <p>exclusive@gmail.com</p>
+          <p>+91 015-88888-99</p>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-column">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Login / Register</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="products.html">Shop</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-column">
+          <h4>Quick Link</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5 -->
+        <div class="footer-column">
+          <h4>Follow us on our socials</h4>
+          <p>Get new exciting deals everyday</p>
+
+          <div class="social-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+          </div>
         </div>
       </div>
 
-      <!-- Column 2 -->
-      <div class="footer-column">
-        <h4>Support</h4>
-        <p>111 Bijoy sarani, Dhaka, DH 1515, India.</p>
-        <p>exclusive@gmail.com</p>
-        <p>+91 015-88888-99</p>
+      <div class="footer-bottom">
+        <p>© Copyright 2025. All right reserved</p>
       </div>
-
-      <!-- Column 3 -->
-      <div class="footer-column">
-        <h4>Account</h4>
-        <ul>
-          <li><a href="#">My Account</a></li>
-          <li><a href="#">Login / Register</a></li>
-          <li><a href="#">Cart</a></li>
-          <li><a href="#">Wishlist</a></li>
-          <li><a href="#">Shop</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 4 -->
-      <div class="footer-column">
-        <h4>Quick Link</h4>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms Of Use</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 5 -->
-      <div class="footer-column">
-        <h4>Follow us on our socials</h4>
-        <p>Get new exciting deals everyday</p>
-
-        <div class="social-icons">
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-linkedin"></i>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>© Copyright 2025. All right reserved</p>
-    </div>
-  </footer>
-  <!-- footer ends -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    </footer>
+    <!-- footer ends -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
