@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lapatops</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/Favicon/site.webmanifest" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Link to your external CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+  </head>
+
+  <body>
+    <!--Header-->
+    <div class="header">
+      <div class="container-fluid top-header">
+        <div class="top-heading">
+          <p class="p">
+            Summer Sale For All Back To All Back To Home Items OFF 50%
+            <span class="top-heading-span">Shop Now!</span>
+          </p>
+        </div>
+
+        <div class="dropdown-container">
+          <select name="language" id="language" class="dropdown">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Marathi">Marathi</option>
+          </select>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg">
+        <div
+          class="container-fluid nav-container d-flex align-items-center justify-content-between"
+        >
+          <!-- Left section: Toggle + Logo -->
+          <div class="d-flex align-items-center">
+            <!-- Toggle button (mobile only) -->
+            <button
+              class="navbar-toggler me-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">Exclusive</a>
+          </div>
+
+          <!-- Middle: Nav links -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right section: Icons -->
+          <div class="nav-icons">
+            <span class="nav-icon">
+              <a href="wishlist.html"
+                ><i class="fa fa-heart-o" aria-hidden="true"></i
+              ></a>
+            </span>
+            <span class="nav-icon">
+              <a href="cart.html"
+                ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Header Ends-->
+
+    <!-- Product Container -->
+    <div class="container-fluid px-4">
+      <div class="row justify-content-center">
+        <div class="container">
+          <div class="page-layout">
+            <!-- Sidebar Filters -->
+            <aside class="filter-sidebar">
+              <!-- Mobile Filter Toggle -->
+              <div class="d-lg-none mb-3">
+                <button
+                  class="btn btn-primary w-100"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#filterCollapse"
+                  aria-expanded="false"
+                  aria-controls="filterCollapse"
+                >
+                  <i class="fa fa-filter me-2"></i>Show Filters
+                </button>
+              </div>
+
+              <!-- Filter Content -->
+              <div class="collapse d-lg-block" id="filterCollapse">
+                <!-- Category Filter -->
+                <div class="filter-group">
+                  <label for="category">Category</label>
+                  <select id="category" class="form-select">
+                    <option value="">All</option>
+                    <option value="phones">Phones</option>
+                    <option value="speakers">Speakers</option>
+                    <option value="watches">Watches</option>
+                    <option value="accessories">Accessories</option>
+                  </select>
+                </div>
+
+                <!-- Price Range -->
+                <div class="filter-group">
+                  <label for="price">Price Range</label>
+                  <input
+                    type="range"
+                    id="price"
+                    min="0"
+                    max="5000"
+                    step="100"
+                    value="2500"
+                    class="form-range"
+                  />
+                  <div class="price-labels">
+                    <span>₹0</span>
+                    <span>₹5000+</span>
+                  </div>
+                </div>
+
+                <!-- Discount Filter -->
+                <div class="filter-group">
+                  <label>Discount</label>
+                  <div class="checkbox-group">
+                    <label
+                      ><input type="checkbox" id="disc10" /> 10% or more</label
+                    >
+                    <label
+                      ><input type="checkbox" id="disc20" /> 20% or more</label
+                    >
+                    <label
+                      ><input type="checkbox" id="disc50" /> 50% or more</label
+                    >
+                  </div>
+                </div>
+
+                <!-- Color Filter -->
+                <div class="filter-group">
+                  <label>Color</label>
+                  <div class="color-options">
+                    <span class="color-box" style="background: black"></span>
+                    <span class="color-box" style="background: red"></span>
+                    <span class="color-box" style="background: blue"></span>
+                    <span class="color-box" style="background: green"></span>
+                    <span
+                      class="color-box"
+                      style="background: white; border: 1px solid #ccc"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="product-container">
+              <!-- Product 1 -->
+              <div class="product-card" style="animation-delay: 0s">
+                <div class="product-image">
+                  <span class="discount-badge">-20%</span>
+                  <a href="#popup1"
+                    ><img
+                      src="images/category/laptop/laptop1.png"
+                      alt="Hp EVO Laptop"
+                  /></a>
+                  <div class="icons">
+                    <label class="icon wishlist-icon">
+                      <input type="checkbox" hidden class="wishlist-checkbox" />
+                      <i class="fa fa-heart"></i>
+                    </label>
+                    <span class="icon"
+                      ><i class="fa fa-shopping-cart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h4 class="product-title">Havic HV G-92 Gamepad</h4>
+                  <div class="price">
+                    <span class="new-price">$192</span>
+                    <span class="old-price">$200</span>
+                  </div>
+                  <div class="rating">
+                    <span class="stars-products">⭐⭐⭐⭐⭐</span>
+                    <span class="reviews">(88)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="product-card" style="animation-delay: 0.1s">
+                <div class="product-image">
+                  <span class="discount-badge">-30%</span>
+                  <a href="#popup2"
+                    ><img src="images/category/laptop/laptop2.png" alt="3M PELTOR X4P5E"
+                  /></a>
+                  <div class="icons">
+                    <label class="icon wishlist-icon">
+                      <input type="checkbox" hidden class="wishlist-checkbox" />
+                      <i class="fa fa-heart"></i>
+                    </label>
+                    <span class="icon"
+                      ><i class="fa fa-shopping-cart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h4 class="product-title">3M PELTOR X4P5E</h4>
+                  <div class="price">
+                    <span class="new-price">$1960</span>
+                    <span class="old-price">$2500</span>
+                  </div>
+                  <div class="rating">
+                    <span class="stars-products">⭐⭐⭐⭐⭐</span>
+                    <span class="reviews">(64)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="product-card" style="animation-delay: 0.2s">
+                <div class="product-image">
+                  <span class="discount-badge">-15%</span>
+                  <a href="#popup3"
+                    ><img src="images/category/laptop/laptop3.png" alt="Amazon Echo Show 5"
+                  /></a>
+                  <div class="icons">
+                    <label class="icon wishlist-icon">
+                      <input type="checkbox" hidden class="wishlist-checkbox" />
+                      <i class="fa fa-heart"></i>
+                    </label>
+                    <span class="icon"
+                      ><i class="fa fa-shopping-cart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h4 class="product-title">Amazon Echo Show 5</h4>
+                  <div class="price">
+                    <span class="new-price">$550</span>
+                    <span class="old-price">$650</span>
+                  </div>
+                  <div class="rating">
+                    <span class="stars-products">⭐⭐⭐⭐</span>
+                    <span class="reviews">(102)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="product-card" style="animation-delay: 0.3s">
+                <div class="product-image">
+                  <span class="discount-badge">-10%</span>
+                  <a href="#popup4"
+                    ><img src="images/category/laptop/laptop4.png" alt="Zonko Tablet"
+                  /></a>
+                  <div class="icons">
+                    <label class="icon wishlist-icon">
+                      <input type="checkbox" hidden class="wishlist-checkbox" />
+                      <i class="fa fa-heart"></i>
+                    </label>
+                    <span class="icon"
+                      ><i class="fa fa-shopping-cart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h4 class="product-title">Zonko Tablet</h4>
+                  <div class="price">
+                    <span class="new-price">$750</span>
+                    <span class="old-price">$830</span>
+                  </div>
+                  <div class="rating">
+                    <span class="stars-products">⭐⭐⭐⭐⭐</span>
+                    <span class="reviews">(50)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 5 -->
+              <div class="product-card" style="animation-delay: 0.4s">
+                <div class="product-image">
+                  <span class="discount-badge">-25%</span>
+                  <a href="#popup6"
+                    ><img src="images/category/laptop/laptop5.png" alt="Samsung Tab"
+                  /></a>
+                  <div class="icons">
+                    <label class="icon wishlist-icon">
+                      <input type="checkbox" hidden class="wishlist-checkbox" />
+                      <i class="fa fa-heart"></i>
+                    </label>
+                    <span class="icon"
+                      ><i class="fa fa-shopping-cart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h4 class="product-title">Samsung Tab</h4>
+                  <div class="price">
+                    <span class="new-price">$960</span>
+                    <span class="old-price">$1280</span>
+                  </div>
+                  <div class="rating">
+                    <span class="stars-products">⭐⭐⭐⭐⭐</span>
+                    <span class="reviews">(73)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 6 -->
+              <div class="product-card" style="animation-delay: 0.4s">
+                <div class="product-image">
+                  <span class="discount-badge">-25%</span>
+                  <a href="#popup6"
+                    ><img src="images/category/laptop/laptop6.png" alt="Samsung Tab"
+                  /></a>
+                  <div class="icons">
+                    <label class="icon wishlist-icon">
+                      <input type="checkbox" hidden class="wishlist-checkbox" />
+                      <i class="fa fa-heart"></i>
+                    </label>
+                    <span class="icon"
+                      ><i class="fa fa-shopping-cart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h4 class="product-title">Samsung Tab</h4>
+                  <div class="price">
+                    <span class="new-price">$960</span>
+                    <span class="old-price">$1280</span>
+                  </div>
+                  <div class="rating">
+                    <span class="stars-products">⭐⭐⭐⭐⭐</span>
+                    <span class="reviews">(73)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup sections -->
+
+    <!--Popup 1-->
+    <div id="popup1" class="popup">
+      <div class="popup-content">
+        <div class="back-btn">
+          <a href="#" class="popup-back">&lt;</a>
+        </div>
+        <div class="top-row">
+          <div class="top-icons">
+            <img
+              src="images/checkout/free-delivery.png"
+              alt="Free Delivery"
+              class="delivery-icon"
+            />
+
+            <input
+              type="checkbox"
+              id="heart-toggle"
+              aria-label="Add to wishlist"
+            />
+            <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+          <img
+            src="images/category/laptop/laptop1.png"
+            alt="Hp EVO Laptop"
+            class="product-img"
+          />
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Havic HV G-92 Gamepad</div>
+        <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          PlayStation 5 Controller Skin High quality vinyl with air channel
+          adhesive for easy bubble free install & mess free removal Pressure
+          sensitive.
+        </p>
+        <div class="price-row">
+          <span class="price">$192.00</span>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!--Popup 1 ends-->
+
+    <!--Popup 2-->
+    <div id="popup2" class="popup">
+      <div class="popup-content">
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+              src="images/checkout/free-delivery.png"
+              alt="Free Delivery"
+              class="delivery-icon"
+            />
+
+            <input
+              type="checkbox"
+              id="heart-toggle"
+              aria-label="Add to wishlist"
+            />
+            <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+          <img
+            src="images/category/laptop/laptop2.png"
+            alt="Hp EVO Laptop"
+            class="product-img"
+          />
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">3M PELTOR X4P5E</div>
+        <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          Professional hearing protection with advanced noise reduction
+          technology.
+        </p>
+        <div class="price-row">
+          <span class="price">$1960.00</span>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!--Popup 2 ends-->
+
+    <!--Popup 3-->
+    <div id="popup3" class="popup">
+      <div class="popup-content">
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+              src="images/checkout/free-delivery.png"
+              alt="Free Delivery"
+              class="delivery-icon"
+            />
+
+            <input
+              type="checkbox"
+              id="heart-toggle"
+              aria-label="Add to wishlist"
+            />
+            <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+          <img
+            src="images/category/laptop/laptop3.png"
+            alt="Hp EVO Laptop"
+            class="product-img"
+          />
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Amazon Echo Show 5</div>
+        <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          Smart display with Alexa voice assistant for home automation and
+          entertainment.
+        </p>
+        <div class="price-row">
+          <span class="price">$550.00</span>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!--Popup 3 ends-->
+
+    <!--Popup 4-->
+    <div id="popup4" class="popup">
+      <div class="popup-content">
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+              src="images/checkout/free-delivery.png"
+              alt="Free Delivery"
+              class="delivery-icon"
+            />
+
+            <input
+              type="checkbox"
+              id="heart-toggle"
+              aria-label="Add to wishlist"
+            />
+            <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+          <img
+            src="images/category/laptop/laptop4.png"
+            alt="Hp EVO Laptop"
+            class="product-img"
+          />
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Zonko Tablet</div>
+        <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          High-performance tablet with stunning display and long battery life.
+        </p>
+        <div class="price-row">
+          <span class="price">$750.00</span>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!--Popup 4 ends-->
+
+    <!--Popup 5-->
+    <div id="popup5" class="popup">
+      <div class="popup-content">
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+              src="images/checkout/free-delivery.png"
+              alt="Free Delivery"
+              class="delivery-icon"
+            />
+
+            <input
+              type="checkbox"
+              id="heart-toggle"
+              aria-label="Add to wishlist"
+            />
+            <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+          <img
+            src="images/category/laptop/laptop5.png"
+            alt="Hp EVO Laptop"
+            class="product-img"
+          />
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Samsung Tab</div>
+        <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          Premium Samsung tablet with cutting-edge features and sleek design.
+        </p>
+        <div class="price-row">
+          <span class="price">$960.00</span>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!--Popup 5 ends-->
+
+    <!--Popup 6-->
+    <div id="popup6" class="popup">
+      <div class="popup-content">
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+              src="images/checkout/free-delivery.png"
+              alt="Free Delivery"
+              class="delivery-icon"
+            />
+
+            <input
+              type="checkbox"
+              id="heart-toggle"
+              aria-label="Add to wishlist"
+            />
+            <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+          <img
+            src="images/category/laptop/laptop6.png"
+            alt="Hp EVO Laptop"
+            class="product-img"
+          />
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Noise Colorfit Smartwatch</div>
+        <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          Feature-rich smartwatch with health tracking and notifications.
+        </p>
+        <div class="price-row">
+          <span class="price">$1160.00</span>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!--Popup 6 ends-->
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-column">
+          <h3>Exclusive</h3>
+          <p class="footer-title">Subscribe</p>
+          <p>Get 10% off your first order</p>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Enter your email" />
+            <button><i class="fa fa-paper-plane"></i></button>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+          <h4>Support</h4>
+          <p>111 Bijoy sarani, Dhaka, DH 1515, India.</p>
+          <p>exclusive@gmail.com</p>
+          <p>+91 015-88888-99</p>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-column">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Login / Register</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="products.html">Shop</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-column">
+          <h4>Quick Link</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5 -->
+        <div class="footer-column">
+          <h4>Follow us on our socials</h4>
+          <p>Get new exciting deals everyday</p>
+
+          <div class="social-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Copyright 2025. All right reserved</p>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
