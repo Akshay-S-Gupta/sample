@@ -71,6 +71,11 @@
   cursor: pointer;
 }
 
+.nav-icons a{
+  text-decoration: none;
+  color: black;
+}
+
 .form-control , .btn{
   border-radius: 0 !important;
 }
@@ -326,13 +331,13 @@
       gap: 5px;
     }
     .top-heading .p {
-        font-size: 9px;
+        font-size: 12px;
         text-align: center;
         margin-bottom: 0;
     }
 
     .dropdown{
-      font-size: 9px;
+      font-size: 12px;
     }
 
     .navbar{

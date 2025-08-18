@@ -28,7 +28,7 @@ body {
 }
 
 /* Modal */
-.modal-content {
+.popup-content {
     background: white;
     border-radius: 12px;
     padding: 42px;
@@ -50,8 +50,14 @@ body {
 /* Top Row */
 .top-row {
     display: flex;
-    justify-content: space-between;
+    gap: 45px;
     align-items: center;
+}
+
+.top-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
 }
 
 .delivery-icon {
@@ -121,6 +127,8 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 24px;
+    display: flex;
+    justify-content: left;
 }
 
 .desc,
@@ -128,6 +136,9 @@ body {
 .stock-status {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
 }
 
 .stock-status {
