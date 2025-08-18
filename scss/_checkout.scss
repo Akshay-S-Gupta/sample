@@ -2,7 +2,10 @@ body {
   font-family: $font-primary;
 }
 
-h2, h4, h5, .breadcrumb {
+h2,
+h4,
+h5,
+.breadcrumb {
   font-family: $font-heading;
 }
 
@@ -125,4 +128,91 @@ a {
   max-width: 190px;
   height: 56px;
   border-radius: 4px;
+}
+
+.modal-content {
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-medium;
+  background-color: $white;
+}
+
+.modal-header {
+  border-bottom: 1px solid $border-color;
+  padding: $spacing-sm;
+
+  .modal-title {
+    font-family: $font-heading;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $text-color;
+  }
+
+  .btn-close {
+    background-size: 1rem;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.modal-body {
+  font-family: $font-primary;
+  font-size: 1rem;
+  color: $text-light;
+  padding: $spacing-md;
+
+  p {
+    margin-bottom: $spacing-sm;
+  }
+
+  h6 {
+    font-family: $font-heading;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: $text-color;
+    margin-bottom: $spacing-sm;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: $spacing-md;
+
+    li {
+      margin-bottom: 8px;
+      color: $text-color;
+    }
+
+    li strong {
+      color: $text-color;
+    }
+  }
+}
+
+.modal-footer {
+  border-top: 1px solid $border-color;
+  padding: $spacing-sm;
+  @include flex-center;
+  gap: $spacing-sm;
+
+  .btn-theme {
+    @include theme-button;
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  .btn-secondary {
+    background-color: $text-color;
+    border-radius: 4px !important;
+    color: $white;
+    padding: 8px 16px;
+    font-size: 1rem;
+    transition: $transition;
+
+    &:hover {
+      background-color: $text-light;
+    }
+  }
 }
