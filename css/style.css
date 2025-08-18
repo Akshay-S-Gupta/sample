@@ -71,6 +71,11 @@
   cursor: pointer;
 }
 
+.nav-icons a{
+  text-decoration: none;
+  color: black;
+}
+
 .form-control , .btn{
   border-radius: 0 !important;
 }
