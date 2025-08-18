@@ -574,7 +574,7 @@
 .fa-heart {
   color: black;
 }
-                 /* chat box starts */
+/* chat box starts */
 /* Chat Icon */
 .chat-icon {
   position: fixed;
@@ -690,7 +690,7 @@
 main {
   padding-bottom: 20px; 
 }
-               /* chatbox ends */
+/* chatbox ends */
 
 
 .heart-toggle { cursor: pointer; position: relative; }
