@@ -5,7 +5,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Wishlist(4)</title>
+  <title>Wishlist</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/Favicon/site.webmanifest">
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Bootstrap CSS (match version) -->
@@ -58,7 +65,7 @@
             <li class="nav-item">
               <a class="nav-link" href="products.html">Products</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
           </ul>
           <form class="d-flex" role="search">
@@ -83,7 +90,12 @@
       </div>
     </nav>
   </div>
+
+
+
   <div style="height:100px"></div>
+
+
 
   <main class="site">
 
@@ -340,7 +352,7 @@
   </main>
 
 
-  <div style="height:100px"></div>
+  <div style="height:50px"></div>
   <!-- Chat Toggle (Hidden Checkbox) -->
   <input type="checkbox" id="chat-toggle" hidden>
 
@@ -361,6 +373,85 @@
       <button type="button" class="send-btn">➤</button>
     </div>
   </div>
+
+
+  <!-- Special Offer Banner -->
+  <div class="container my-5">
+    <div class="p-4 rounded-3 text-white text-center special-offer-banner">
+      <h2 class="mb-2">🎉 Special Offer Just For You!</h2>
+      <p class="mb-3">Get up to <strong>50% OFF</strong> on selected items. Limited time only!</p>
+      <a href="products.html" class="btn btn-light btn-lg fw-bold">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Highly Reordered Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">🔄 Highly Reordered</h2>
+    <div id="reorderedCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+
+      <div class="carousel-inner">
+
+        <!-- First Slide -->
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="product-card text-center">
+                <img src="images/img/slider-img.png" class="d-block w-100" alt="Tablet">
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="product-card text-center">
+                <img src="images/swatch.png" class="d-block w-100" alt="Mobile">
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="product-card text-center">
+                <img src="images/boat.png" class="d-block w-100" alt="Mobile">
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="product-card text-center">
+                <img src="images/Speaker.png" class="d-block w-100" alt="Mobile">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="product-card text-center">
+                <img src="images/ps5-slim-goedkope-playstation_large 1.png" class="d-block w-100" alt="PS5">
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="product-card text-center">
+                <img src="images/HAVIT HV-G92 Gamepad.png" class="d-block w-100" alt="Gamepad">
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card text-center">
+              <img src="images/flip.png" class="d-block w-100" alt="Mobile">
+            </div>
+            
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#reorderedCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reorderedCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
 
   <!-- footer -->
   <footer class="footer">
