@@ -144,124 +144,213 @@
         </ol>
       </nav>
 
-      <div class="row mt-5">
-        <div class="col-md-5">
-          <h4 class="billing-heading">Billing Details</h4>
-          <form>
+      <!-- Form wrapping both billing details and order summary -->
+      <form id="checkout-form">
+        <div class="row mt-5">
+          <div class="col-md-5">
+            <h4 class="billing-heading">Billing Details</h4>
             <div class="form-field">
               <label class="form-label">
                 First Name<span class="required-star">*</span>
               </label>
-              <input type="text" class="form-control" />
+              <input
+                type="text"
+                class="form-control"
+                name="firstName"
+                required
+              />
             </div>
             <div class="form-field">
               <label class="form-label">Company Name</label>
-              <input type="text" class="form-control" />
+              <input type="text" class="form-control" name="companyName" />
             </div>
             <div class="form-field">
               <label class="form-label">
                 Street Address<span class="required-star">*</span>
               </label>
-              <input type="text" class="form-control" />
+              <input
+                type="text"
+                class="form-control"
+                name="streetAddress"
+                required
+              />
             </div>
             <div class="form-field">
-              <label class="form-label">
-                Apartment, floor, etc. (optional)
-              </label>
-              <input type="text" class="form-control" />
+              <label class="form-label"
+                >Apartment, floor, etc. (optional)</label
+              >
+              <input type="text" class="form-control" name="apartment" />
             </div>
             <div class="form-field">
               <label class="form-label">
                 Town/City<span class="required-star">*</span>
               </label>
-              <input type="text" class="form-control" />
+              <input type="text" class="form-control" name="city" required />
             </div>
             <div class="form-field">
               <label class="form-label">
                 Phone Number<span class="required-star">*</span>
               </label>
-              <input type="text" class="form-control" />
+              <input type="text" class="form-control" name="phone" required />
             </div>
             <div class="form-field">
               <label class="form-label">
                 Email Address<span class="required-star">*</span>
               </label>
-              <input type="email" class="form-control" />
+              <input type="email" class="form-control" name="email" required />
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="save-info" />
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="save-info"
+                name="saveInfo"
+              />
               <label for="save-info" class="form-check-label">
                 Save this information for faster check-out next time
               </label>
             </div>
-          </form>
+          </div>
+
+          <div class="col-md-5 offset-md-2">
+            <div class="order-summary">
+              <div class="order-section">
+                <div class="order-item">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="images/checkout/controller.png"
+                      alt="Gaming Controller"
+                    />
+                    <span>Gaming Controller</span>
+                  </div>
+                  <span>$650</span>
+                </div>
+                <div class="order-item">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="images/checkout/Monitor.png"
+                      alt="Gaming Monitor"
+                    />
+                    <span>Gaming Monitor</span>
+                  </div>
+                  <span>$1100</span>
+                </div>
+                <div class="order-totals">
+                  <div
+                    class="d-flex justify-content-between pb-2 mb-2 border-bottom"
+                  >
+                    <span>Subtotal:</span>
+                    <span>$1750</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between pb-2 mb-2 border-bottom"
+                  >
+                    <span>Shipping:</span>
+                    <span>Free</span>
+                  </div>
+                  <div class="d-flex justify-content-between fw-bold">
+                    <span>Total:</span>
+                    <span>$1750</span>
+                  </div>
+                </div>
+
+                <div class="payment-option">
+                  <input type="radio" name="payment" id="bank" value="bank" />
+                  <label for="bank" class="m-0">Bank</label>
+                  <div class="payment-icons">
+                    <img src="images/checkout/bkash.png" alt="bKash" />
+                    <img src="images/checkout/visa.png" alt="Visa" />
+                    <img
+                      src="images/checkout/mastercard.png"
+                      alt="MasterCard"
+                    />
+                    <img src="images/checkout/nagad.png" alt="Nagad" />
+                  </div>
+                </div>
+
+                <div class="payment-option">
+                  <input
+                    type="radio"
+                    name="payment"
+                    id="cod"
+                    value="cod"
+                    checked
+                  />
+                  <label for="cod" class="m-0">Cash on delivery</label>
+                </div>
+                <div class="coupon-section">
+                  <input type="text" placeholder="Coupon Code" name="coupon" />
+                  <button type="button" class="btn-theme">Apply Coupon</button>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    class="btn-theme place-order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderConfirmationModal"
+                  >
+                    Place Order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </form>
 
-        <div class="col-md-5 offset-md-2">
-          <div class="order-summary">
-            <div class="order-section">
-              <div class="order-item">
-                <div class="d-flex align-items-center">
-                  <img src="images/checkout/controller.png" alt="" />
-                  <span>Gaming Controller</span>
-                </div>
-                <span>$650</span>
-              </div>
-              <div class="order-item">
-                <div class="d-flex align-items-center">
-                  <img src="images/checkout/Monitor.png" alt="" />
-                  <span>Gaming Monitor</span>
-                </div>
-                <span>$1100</span>
-              </div>
-              <div class="order-totals">
-                <div
-                  class="d-flex justify-content-between pb-2 mb-2 border-bottom"
-                >
-                  <span>Subtotal:</span>
-                  <span>$1750</span>
-                </div>
-                <div
-                  class="d-flex justify-content-between pb-2 mb-2 border-bottom"
-                >
-                  <span>Shipping:</span>
-                  <span>Free</span>
-                </div>
-                <div class="d-flex justify-content-between fw-bold">
-                  <span>Total:</span>
-                  <span>$1750</span>
-                </div>
-              </div>
-
-              <div class="payment-option">
-                <input type="radio" name="payment" id="bank" />
-                <label for="bank" class="m-0">Bank</label>
-
-                <div class="payment-icons">
-                  <img src="images/checkout/bkash.png" alt="bKash" />
-                  <img src="images/checkout/visa.png" alt="Visa" />
-                  <img src="images/checkout/mastercard.png" alt="MasterCard" />
-                  <img src="images/checkout/nagad.png" alt="Nagad" />
-                </div>
-              </div>
-
-              <div class="payment-option">
-                <input type="radio" name="payment" id="cod" checked />
-                <label for="cod" class="m-0">Cash on delivery</label>
-              </div>
-              <div class="coupon-section">
-                <input type="text" placeholder="Coupon Code" />
-                <button class="btn-theme">Apply Coupon</button>
-              </div>
-              <div>
-                <button class="btn-theme place-order-btn">Place Order</button>
-              </div>
+      <!-- Confirmation Modal -->
+      <div
+        class="modal fade"
+        id="orderConfirmationModal"
+        tabindex="-1"
+        aria-labelledby="orderConfirmationModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="orderConfirmationModalLabel">
+                Order Confirmed
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Thank you for your order! Your order has been placed
+                successfully.
+              </p>
+              <h6>Order Details</h6>
+              <ul>
+                <li>Gaming Controller - $650</li>
+                <li>Gaming Monitor - $1100</li>
+                <li><strong>Subtotal:</strong> $1750</li>
+                <li><strong>Shipping:</strong> Free</li>
+                <li><strong>Total:</strong> $1750</li>
+              </ul>
+              <p>
+                <strong>Note:</strong> Your billing and payment details have
+                been recorded.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a href="index.html" class="btn btn-theme">Return to Home</a>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <!--Footer-->
     <footer class="footer">
       <div class="footer-container">

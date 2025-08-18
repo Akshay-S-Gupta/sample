@@ -3,7 +3,7 @@
   background-color: $primary-color;
   color: $white;
   border: none;
-  border-radius: 4px;
+  border-radius: 4px !important;
   transition: $transition;
   &:hover {
     background-color: $primary-hover;
