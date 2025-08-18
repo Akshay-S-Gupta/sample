@@ -16,6 +16,11 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,6 +38,7 @@
     <!-- Link to your external CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/popup.css">
   </head>
 
   <body>
@@ -213,7 +219,7 @@
                 <div class="product-image">
                   <span class="discount-badge">-20%</span>
                   <a href="#popup1"
-                    ><img src="images/img/p9.jpg" alt="Hp EVO Laptop"
+                    ><img src="images/checkout/popup-controller.png" alt="Hp EVO Laptop"
                   /></a>
                   <div class="icons">
                     <label class="icon wishlist-icon">
@@ -226,10 +232,10 @@
                   </div>
                 </div>
                 <div class="product-info">
-                  <h4 class="product-title">Hp EVO Laptop</h4>
+                  <h4 class="product-title">Havic HV G-92 Gamepad</h4>
                   <div class="price">
-                    <span class="new-price">$960</span>
-                    <span class="old-price">$1200</span>
+                    <span class="new-price">$192</span>
+                    <span class="old-price">$200</span>
                   </div>
                   <div class="rating">
                     <span class="stars">⭐⭐⭐⭐⭐</span>
@@ -408,7 +414,7 @@
                   </div>
                 </div>
                 <div class="product-info">
-                  <h4 class="product-title">HAVIT HV-G92 Gamepad</h4>
+                  <h4 class="product-title">SonicWave Bluetooth Headphones</h4>
                   <div class="price">
                     <span class="new-price">$560</span>
                     <span class="old-price">$700</span>
@@ -438,7 +444,7 @@
                   </div>
                 </div>
                 <div class="product-info">
-                  <h4 class="product-title">AK-900 Wired Keyboard</h4>
+                  <h4 class="product-title">AK-900 HD Video Camera</h4>
                   <div class="price">
                     <span class="new-price">$200</span>
                     <span class="old-price">$230</span>
@@ -468,7 +474,7 @@
                   </div>
                 </div>
                 <div class="product-info">
-                  <h4 class="product-title">Wireless Headphones</h4>
+                  <h4 class="product-title">TWS Wireless Earbuds</h4>
                   <div class="price">
                     <span class="new-price">$180</span>
                     <span class="old-price">$230</span>
@@ -528,7 +534,7 @@
                   </div>
                 </div>
                 <div class="product-info">
-                  <h4 class="product-title">Smart Watch</h4>
+                  <h4 class="product-title">Next-Gen Gaming Console</h4>
                   <div class="price">
                     <span class="new-price">$240</span>
                     <span class="old-price">$280</span>
@@ -558,7 +564,7 @@
                   </div>
                 </div>
                 <div class="product-info">
-                  <h4 class="product-title">Portable Speaker</h4>
+                  <h4 class="product-title">MagSafe Portable Speaker</h4>
                   <div class="price">
                     <span class="new-price">$150</span>
                     <span class="old-price">$165</span>
@@ -576,132 +582,832 @@
     </div>
 
     <!-- Popup sections -->
+
+    <!--Popup 1-->
     <div id="popup1" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/p9.jpg" alt="Hp EVO Laptop" />
-        <div class="popup-description">
-          The Hp EVO Laptop is a powerful computing device designed for
-          productivity and performance.
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/checkout/popup-controller.png" alt="Hp EVO Laptop" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Havic HV G-92 Gamepad</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          PlayStation 5 Controller Skin High quality vinyl with air channel
+          adhesive for easy bubble free install & mess free removal Pressure
+          sensitive.
+        </p>
+        <div class="price-row">
+          <span class="price">$192.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
+    <!--Popup 1 ends-->
 
+
+    <!--Popup 2-->
     <div id="popup2" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/p10.jpg" alt="3M PELTOR X4P5E" />
-        <div class="popup-description">
+         <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/p10.jpg" alt="Hp EVO Laptop" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">3M PELTOR X4P5E</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
           Professional hearing protection with advanced noise reduction
           technology.
+        </p>
+        <div class="price-row">
+          <span class="price">$1960.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
 
+    <!--Popup 2 ends-->
+
+    <!--Popup 3-->
     <div id="popup3" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/p11.jpg" alt="Amazon Echo Show 5" />
-        <div class="popup-description">
-          Smart display with Alexa voice assistant for home automation and
-          entertainment.
+ <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/p11.jpg" alt="Hp EVO Laptop" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Amazon Echo Show 5</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+         Smart display with Alexa voice assistant for home automation and entertainment.
+        </p>
+        <div class="price-row">
+          <span class="price">$550.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
 
+    <!--Popup 3 ends-->
+
+    <!--Popup 4-->
     <div id="popup4" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/slider-img.png" alt="Zonko Tablet" />
-        <div class="popup-description">
+         <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/slider-img.png" alt="Hp EVO Laptop" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Zonko Tablet</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
           High-performance tablet with stunning display and long battery life.
+        </p>
+        <div class="price-row">
+          <span class="price">$750.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
 
+    <!--Popup 4 ends-->
+
+    <!--Popup 5-->
     <div id="popup5" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/tp1.jpg" alt="Samsung Tab" />
-        <div class="popup-description">
+         <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/tp1.jpg" alt="Hp EVO Laptop" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Samsung Tab</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
           Premium Samsung tablet with cutting-edge features and sleek design.
+        </p>
+        <div class="price-row">
+          <span class="price">$960.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
+
+    <!--Popup 5 ends-->
+
+    <!--Popup 6-->
 
     <div id="popup6" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/tp2.jpg" alt="Noise Colorfit Smartwatch" />
-        <div class="popup-description">
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/tp2.jpg" alt="Hp EVO Laptop" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Noise Colorfit Smartwatch</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
           Feature-rich smartwatch with health tracking and notifications.
+        </p>
+        <div class="price-row">
+          <span class="price">$1160.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
 
+    <!--Popup 6 ends-->
+
+    <!--Popup 7-->
     <div id="popup7" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/tp3.jpg" alt="HAVIT HV-G92 Gamepad" />
-        <div class="popup-description">
-          Ergonomic gaming controller designed for comfortable extended gaming
-          sessions.
+         <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/tp3.jpg" alt="SonicWave Pro Bluetooth Headphones" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">SonicWave Bluetooth Headphones</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          Powerful sound and vibrant style with the SonicWave Pro Bluetooth Headphones. Featuring a bold blue-and-red design, soft cushioned ear pads for all-day comfort, and wireless connectivity, these headphones are perfect for music lovers who want both performance and flair.
+        </p>
+        <div class="price-row">
+          <span class="price">$560.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
+
+    <!--Popup 7 ends-->
+
+    <!--Popup 8-->
 
     <div id="popup8" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/tp4.jpg" alt="AK-900 Wired Keyboard" />
-        <div class="popup-description">
-          Mechanical keyboard with tactile keys and customizable lighting.
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/tp4.jpg" alt="SonicWave Pro Bluetooth Headphones" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">AK-900 HD Video Camera</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          Professional video camera with high-resolution recording and built-in mic. Perfect for content creators and vloggers.
+        </p>
+        <div class="price-row">
+          <span class="price">$200.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
+<!--Popup 8 ends-->
+
+<!--Popup 9-->
 
     <div id="popup9" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/tp5.jpg" alt="Wireless Headphones" />
-        <div class="popup-description">
-          Premium wireless headphones with noise cancellation and premium sound
-          quality.
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/tp5.jpg" alt="SonicWave Pro Bluetooth Headphones" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">TWS Wireless Earbuds</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          Compact and stylish true wireless earbuds with crystal-clear sound. Lightweight design for all-day listening on the go.
+        </p>
+        <div class="price-row">
+          <span class="price">$180.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
+
+    <!--Popup 9 ends-->
+
+    <!--Popup 10-->
 
     <div id="popup10" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/tp6.png" alt="RGB Liquid CPU Cooler" />
-        <div class="popup-description">
-          High-performance liquid cooling solution with customizable RGB
-          lighting.
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/tp6.png" alt="SonicWave Pro Bluetooth Headphones" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">RGB Liquid CPU Cooler</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          High-performance liquid cooler with vibrant RGB lighting.Keeps your PC cool even during heavy gaming or editing.
+        </p>
+        <div class="price-row">
+          <span class="price">$80.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
+
+    <!--Popup 10 ends-->
+
+
+    <!--Popup 11-->
 
     <div id="popup11" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/tp7.jpg" alt="Smart Watch" />
-        <div class="popup-description">
-          Advanced smartwatch with health monitoring and fitness tracking
-          features.
+       <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/tp7.jpg" alt="SonicWave Pro Bluetooth Headphones" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">Next-Gen Gaming Console</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          Sleek gaming console with immersive graphics and smooth performance. Comes with a wireless controller for ultimate gameplay.
+        </p>
+        <div class="price-row">
+          <span class="price">$240.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
 
+    <!--Popup 11 ends-->
+
+
+    <!--Popup 12-->
+
     <div id="popup12" class="popup">
       <div class="popup-content">
-        <a href="#" class="popup-back">&lt;</a>
-        <img src="images/img/tp8.jpg" alt="Portable Speaker" />
-        <div class="popup-description">
-          Portable Bluetooth speaker with powerful sound and long battery life.
+        <div class="top-row">
+          <div class="back-btn">
+            <a href="#" class="popup-back">&lt;</a>
+          </div>
+          <div class="top-icons">
+            <img
+            src="images/checkout/free-delivery.png"
+            alt="Free Delivery"
+            class="delivery-icon"/>
+
+            <input
+            type="checkbox"
+            id="heart-toggle"
+            aria-label="Add to wishlist"
+          />
+          <label for="heart-toggle"><i class="bi bi-heart"></i></label>
+          </div>
+        </div>
+        <div class="product-img-container">
+           <img src="images/img/tp8.jpg" alt="SonicWave Pro Bluetooth Headphones" class="product-img"/>
+        </div>
+        <div class="color-options">
+          <span class="color-circle color-blue"></span>
+          <span class="color-circle color-red"></span>
+        </div>
+        <div class="product-title">MagSafe Portable Speaker</div>
+         <div class="rating-row">
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              class="bi bi-star-fill"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              class="bi bi-star-fill"
+            ></label>
+          </div>
+          <span class="reviews">(150 Reviews)</span>
+          <span class="divider"></span>
+          <span class="stock-status">In Stock</span>
+        </div>
+        <p class="desc">
+          Ultra-slim portable speaker with magnetic wireless attachment.Delivers powerful sound in a compact design.
+        </p>
+        <div class="price-row">
+          <span class="price">$150.00</span>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
+
+    <!--Popup 12 ends-->
 
     <!--Footer-->
     <footer class="footer">
